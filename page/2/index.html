@@ -936,164 +936,200 @@
 
 
 
+
 <script>
-    
-
-
-
-
-const live2d_path = 'https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.6/dist/';
-
-const cssPath = "https://BucketSran.github.io/hugo-dev/waifu/waifu.css";
-
-const waifuTipsJsonPath = "https://BucketSran.github.io/hugo-dev/waifu/waifu-tips.json";
-
-const live2dMinJsPath = "https://BucketSran.github.io/hugo-dev/waifu/live2d.min.js";
-
-
-function loadExternalResource(url, type) {
-  return new Promise((resolve, reject) => {
-    let tag;
-
-    if (type === 'css') {
-      tag = document.createElement('link');
-      tag.rel = 'stylesheet';
-      tag.href = url;
-    }
-    else if (type === 'js') {
-      tag = document.createElement('script');
-      tag.type = 'module';
-      tag.src = url;
-    }
-    if (tag) {
-      tag.onload = () => resolve(url);
-      tag.onerror = () => reject(url);
-      document.head.appendChild(tag);
-    }
-  });
-}
-
-(async () => {
-  
-  
-  
-
-  
-  
-  const OriginalImage = window.Image;
-  window.Image = function(...args) {
-    const img = new OriginalImage(...args);
-    img.crossOrigin = "anonymous";
-    return img;
-  };
-  window.Image.prototype = OriginalImage.prototype;
-  
-  
-  await Promise.all([
-    loadExternalResource(cssPath, 'css'),
-    loadExternalResource(live2dMinJsPath, 'js'),
-    loadExternalResource(live2d_path + 'waifu-tips.js', 'js')
-  ]);
-  
-  
-  initWidget({
-    waifuPath: waifuTipsJsonPath,
-    cdnPath: 'https://cdn.jsdelivr.net/gh/BucketSran/static-resource@v1.0.0',
-    cubism2Path: live2d_path + 'live2d.min.js',
-    
-    tools: ['hitokoto', 'asteroids', 'switch-model', 'switch-texture', 'photo', 'info', 'quit'],
-    logLevel: 'warn',
-    drag: false,
-  });
-  initWaifuMouseEvent();
-})();
-
+     
 
     
+    const live2d_path = 'https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.6/dist/';
+    
+    const cssPath = "https://BucketSran.github.io/hugo-dev/waifu/waifu.css";
+    
+    const waifuTipsJsonPath = "https://BucketSran.github.io/hugo-dev/waifu/waifu-tips.json";
+    
+    const live2dMinJsPath = "https://BucketSran.github.io/hugo-dev/waifu/live2d.min.js";
+
+
+     
+
+    
+
+    function loadExternalResource(url, type) {
+        return new Promise((resolve, reject) => {
+            let tag;
+
+            if (type === 'css') {
+                tag = document.createElement('link');
+                tag.rel = 'stylesheet';
+                tag.href = url;
+            } else if (type === 'js') {
+                tag = document.createElement('script');
+                
+                
+                tag.type = 'module'; 
+                tag.src = url;
+            }
+
+            if (tag) {
+                
+                tag.onload = () => resolve(url);
+                
+                tag.onerror = () => reject(url);
+                
+                document.head.appendChild(tag);
+            }
+        });
+    }
+
+    
+
     function initWaifuMouseEvent() {
+        
         const waifu = document.getElementById("waifu");
-        let isDown = false;
-        let waifuLeft;
-        let mouseLeft;
-        let waifuTop;
-        let mouseTop;
+        
+        
+        if (!waifu) return;
+
+        
+        let isDown = false;      
+        let waifuLeft = 0;       
+        let mouseLeft = 0;       
+        let waifuTop = 0;        
+        let mouseTop = 0;        
+
         
         waifu.onmousedown = function (e) {
             isDown = true;
             
             waifuLeft = waifu.offsetLeft;
             mouseLeft = e.clientX;
-            
             waifuTop = waifu.offsetTop;
             mouseTop = e.clientY;
         }
+
         
         window.onmousemove = function (e) {
+            
             if (!isDown) {
                 return;
             }
+
+            
             
             let currentLeft = waifuLeft + (e.clientX - mouseLeft);
+            
             if (currentLeft < 0) {
-                currentLeft = 0;
-            } else if (currentLeft > window.innerWidth - 300) {
+                currentLeft = 0; 
+            } else if (currentLeft > window.innerWidth - 300) { 
                 currentLeft = window.innerWidth - 300;
             }
-            waifu.style.left = currentLeft  + "px";
+            waifu.style.left = currentLeft + "px";
+
+            
             
             let currentTop = waifuTop + (e.clientY - mouseTop);
-            if (currentTop < 30) {
-                currentTop = 30
-            } else if (currentTop > window.innerHeight - 290) {
-                currentTop = window.innerHeight - 290
+            
+            if (currentTop < 0) { 
+                currentTop = 0;
+            } else if (currentTop > window.innerHeight - 290) { 
+                currentTop = window.innerHeight - 290;
             }
             waifu.style.top = currentTop + "px";
         }
+
         
         window.onmouseup = function (e) {
+            
             isDown = false;
         }
     }
+
+
+ 
+
+
+
+if (screen.width >= 768) {
+
+    
+    (async () => {
+        
+        const OriginalImage = window.Image;
+        window.Image = function(...args) {
+            const img = new OriginalImage(...args);
+            img.crossOrigin = "anonymous";
+            return img;
+        };
+        window.Image.prototype = OriginalImage.prototype;
+
+        
+        await Promise.all([
+            loadExternalResource(cssPath, 'css'),
+            loadExternalResource(live2dMinJsPath, 'js'),
+            loadExternalResource(live2d_path + 'waifu-tips.js', 'js')
+        ]);
+
+        
+        initWidget({
+            waifuPath: waifuTipsJsonPath,
+            cdnPath: 'https://cdn.jsdelivr.net/gh/BucketSran/static-resource@v1.0.0',
+            
+            cubism2Path: live2d_path + 'live2d.min.js',
+            
+            tools: ['hitokoto', 'asteroids', 'switch-model', 'switch-texture', 'photo', 'info', 'quit'],
+            logLevel: 'warn',
+            drag: false, 
+        });
+        
+        
+        initWaifuMouseEvent();
+    })();
+
+} 
 </script>
 
+
 <style>
+     
     #backTopBtn {
-        display: none;
-        position: fixed;
+        display: none;  
+        position: fixed;  
         bottom: 30px;
         z-index: 99;
-        cursor: pointer;
+        cursor: pointer;  
         width: 30px;
         height: 30px;
-        background-image: url(https://BucketSran.github.io/hugo-dev/icons/backTop.svg);
+        background-image: url(https://BucketSran.github.io/hugo-dev/icons/backTop.svg);  
     }
 </style>
-
-
-
-
-<script src=https://BucketSran.github.io/hugo-dev/background/sakura.js></script>
 
 <script>
     
 
     function initScrollTop() {
+        
         let rightSideBar = document.querySelector(".right-sidebar");
+        
+        
         if (!rightSideBar) {
             return;
         }
+
         
         let btn = document.createElement("div");
-        btn.id = "backTopBtn";
-        btn.onclick = backToTop
-        rightSideBar.appendChild(btn)
+        btn.id = "backTopBtn"; 
+        btn.onclick = backToTop; 
+        
+        
+        rightSideBar.appendChild(btn);
+
         
         window.onscroll = function() {
             
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                btn.style.display = "block";
+                btn.style.display = "block"; 
             } else {
-                btn.style.display = "none";
+                btn.style.display = "none"; 
             }
         };
     }
@@ -1101,18 +1137,18 @@ function loadExternalResource(url, type) {
     
 
     function backToTop(){
-        window.scrollTo({ top: 0, behavior: "smooth" })
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
+    
     initScrollTop();
 </script>
 
 
+<script src=https://BucketSran.github.io/hugo-dev/background/sakura.js></script>
 
 
-
-
-
+<script defer src="https://cn.vercount.one/js"></script>
 
     </body>
 </html>
