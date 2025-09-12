@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
-<title>Markdown Syntax Guide</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="个人使用记录">
+<title>部分操作指南</title>
 
-<link rel='canonical' href='https://BucketSran.github.io/hugo-dev/p/markdown-syntax-guide/'>
+<link rel='canonical' href='https://BucketSran.github.io/hugo-dev/p/%E9%83%A8%E5%88%86%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/'>
 
-<link rel="stylesheet" href="/hugo-dev/scss/style.min.c7b5050863c073fb4aea9f5addaed5552dff891ab534816510c134e8242d9148.css"><meta property='og:title' content="Markdown Syntax Guide">
-<meta property='og:description' content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
-<meta property='og:url' content='https://BucketSran.github.io/hugo-dev/p/markdown-syntax-guide/'>
+<link rel="stylesheet" href="/hugo-dev/scss/style.min.c7b5050863c073fb4aea9f5addaed5552dff891ab534816510c134e8242d9148.css"><meta property='og:title' content="部分操作指南">
+<meta property='og:description' content="个人使用记录">
+<meta property='og:url' content='https://BucketSran.github.io/hugo-dev/p/%E9%83%A8%E5%88%86%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/'>
 <meta property='og:site_name' content='BucketSran'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='markdown' /><meta property='article:tag' content='css' /><meta property='article:tag' content='html' /><meta property='article:tag' content='themes' /><meta property='article:published_time' content='2019-03-11T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-09-08T20:27:49&#43;08:00'/><meta property='og:image' content='https://BucketSran.github.io/hugo-dev/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg' />
-<meta name="twitter:title" content="Markdown Syntax Guide">
-<meta name="twitter:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements."><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://BucketSran.github.io/hugo-dev/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-09-08T20:32:25&#43;08:00'/><meta property='article:modified_time' content='2025-09-12T18:06:56&#43;08:00'/><meta property='og:image' content='https://BucketSran.github.io/hugo-dev/p/%E9%83%A8%E5%88%86%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/we_are_all_clowns.jpg' />
+<meta name="twitter:title" content="部分操作指南">
+<meta name="twitter:description" content="个人使用记录"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://BucketSran.github.io/hugo-dev/p/%E9%83%A8%E5%88%86%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/we_are_all_clowns.jpg' />
     <link rel="shortcut icon" href="/hugo-dev/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -436,64 +436,49 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ul>
-    <li><a href="#headings">Headings</a></li>
+    <li><a href="#1-主页面美化">1 主页面美化</a>
+      <ul>
+        <li><a href="#11-修改头像">1.1 修改头像</a></li>
+        <li><a href="#12-修改主页头像下的链接">1.2 修改主页头像下的链接</a></li>
+        <li><a href="#13-关键词检索和标签云设置">1.3 关键词检索和标签云设置</a></li>
+        <li><a href="#14-其他">1.4 其他</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-如何为博客添加内容">2 如何为博客添加内容</a>
+      <ul>
+        <li><a href="#21-如何新增一篇博客">2.1 如何新增一篇博客</a></li>
+        <li><a href="#22-如何为博客添加图片">2.2 如何为博客添加图片</a></li>
+      </ul>
+    </li>
   </ul>
 
   <ul>
-    <li><a href="#h2">H2</a>
+    <li><a href="#3-美化方法">3 美化方法</a>
       <ul>
-        <li><a href="#h3">H3</a>
+        <li><a href="#31-博客内容美化">3.1 博客内容美化</a>
           <ul>
-            <li><a href="#h4">H4</a></li>
+            <li><a href="#311-macos风格的代码块">3.1.1 macOS风格的代码块</a></li>
+            <li><a href="#312-代码块过长折叠展开">3.1.2 代码块过长折叠&amp;展开</a></li>
+            <li><a href="#313-自定义md引用块颜色模板">3.1.3 自定义MD引用块颜色模板</a></li>
+            <li><a href="#314-更改目录的显示">3.1.4 更改目录的显示</a></li>
+          </ul>
+        </li>
+        <li><a href="#32-主页字体和鼠标修改">3.2 主页字体和鼠标修改</a>
+          <ul>
+            <li><a href="#321-修改字体">3.2.1 修改字体</a></li>
+            <li><a href="#322-修改鼠标样式">3.2.2 修改鼠标样式</a></li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><a href="#paragraph">Paragraph</a></li>
-    <li><a href="#blockquotes">Blockquotes</a>
+    <li><a href="#4-一些零散的修改">4 一些零散的修改</a>
       <ul>
-        <li>
-          <ul>
-            <li><a href="#blockquote-without-attribution">Blockquote without attribution</a></li>
-            <li><a href="#blockquote-with-attribution">Blockquote with attribution</a></li>
-          </ul>
-        </li>
+        <li><a href="#41-主页友链links相关">4.1 主页友链links相关</a></li>
+        <li><a href="#411-友链归档多列显示">4.1.1 友链、归档多列显示</a></li>
+        <li><a href="#412-如何添加友链">4.1.2 如何添加友链</a></li>
+        <li><a href="#42-如何添加更多的音乐">4.2 如何添加更多的音乐</a></li>
       </ul>
     </li>
-    <li><a href="#tables">Tables</a>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#inline-markdown-within-tables">Inline Markdown within tables</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#code-blocks">Code Blocks</a>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#code-block-with-backticks">Code block with backticks</a></li>
-            <li><a href="#code-block-indented-with-four-spaces">Code block indented with four spaces</a></li>
-            <li><a href="#code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo&rsquo;s internal highlight shortcode</a></li>
-            <li><a href="#diff-code-block">Diff code block</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#list-types">List Types</a>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#ordered-list">Ordered List</a></li>
-            <li><a href="#unordered-list">Unordered List</a></li>
-            <li><a href="#nested-list">Nested list</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark</a></li>
-    <li><a href="#hyperlinked-image">Hyperlinked image</a></li>
   </ul>
 </nav>
         </div>
@@ -508,13 +493,13 @@
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/hugo-dev/p/markdown-syntax-guide/">
-                <img src="/hugo-dev/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash_hu_c86b681f3fee94ff.jpg"
-                        srcset="/hugo-dev/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash_hu_c86b681f3fee94ff.jpg 800w, /hugo-dev/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash_hu_bea442a1395058f4.jpg 1600w"
+            <a href="/hugo-dev/p/%E9%83%A8%E5%88%86%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/">
+                <img src="/hugo-dev/p/%E9%83%A8%E5%88%86%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/we_are_all_clowns_hu_dd454f511329383c.jpg"
+                        srcset="/hugo-dev/p/%E9%83%A8%E5%88%86%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/we_are_all_clowns_hu_dd454f511329383c.jpg 800w, /hugo-dev/p/%E9%83%A8%E5%88%86%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/we_are_all_clowns_hu_b60cbe05d4a10b1a.jpg 1600w"
                         width="800" 
-                        height="534" 
+                        height="800" 
                         loading="lazy"
-                        alt="Featured image of post Markdown Syntax Guide" />
+                        alt="Featured image of post 部分操作指南" />
                 
             </a>
         </div>
@@ -522,27 +507,15 @@
 
     <div class="article-details">
     
-    <header class="article-category">
-        
-            <a href="/hugo-dev/categories/themes/" >
-                Themes
-            </a>
-        
-            <a href="/hugo-dev/categories/syntax/" >
-                Syntax
-            </a>
-        
-    </header>
-    
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/hugo-dev/p/markdown-syntax-guide/">Markdown Syntax Guide</a>
+            <a href="/hugo-dev/p/%E9%83%A8%E5%88%86%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/">部分操作指南</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            Sample article showcasing basic Markdown syntax and formatting for HTML elements.
+            个人使用记录
         </h3>
         
     </div>
@@ -563,7 +536,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2019-03-11</time>
+                <time class="article-time--published">2025-09-08</time>
             </div>
         
 
@@ -578,7 +551,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 3 分钟
+                    阅读时长: 5 分钟
                 </time>
             </div>
         
@@ -593,156 +566,45 @@
     <section class="article-content">
     
     
-    <p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
-<h2 id="headings">Headings
-</h2><p>The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
-<h1 id="h1">H1
-</h1><h2 id="h2">H2
-</h2><h3 id="h3">H3
-</h3><h4 id="h4">H4
-</h4><h5 id="h5">H5
-</h5><h6 id="h6">H6
-</h6><h2 id="paragraph">Paragraph
-</h2><p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.</p>
-<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.</p>
-<h2 id="blockquotes">Blockquotes
-</h2><p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a <code>footer</code> or <code>cite</code> element, and optionally with in-line changes such as annotations and abbreviations.</p>
-<h4 id="blockquote-without-attribution">Blockquote without attribution
-</h4><blockquote>
-<p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p></blockquote>
-<h4 id="blockquote-with-attribution">Blockquote with attribution
-</h4><blockquote>
-<p>Don&rsquo;t communicate by sharing memory, share memory by communicating.<br>
-— <cite>Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p></blockquote>
-<h2 id="tables">Tables
-</h2><p>Tables aren&rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.</p>
-<div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>Name</th>
-          <th>Age</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Bob</td>
-          <td>27</td>
-      </tr>
-      <tr>
-          <td>Alice</td>
-          <td>23</td>
-      </tr>
-  </tbody>
-</table></div>
-<h4 id="inline-markdown-within-tables">Inline Markdown within tables
-</h4><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>Italics</th>
-          <th>Bold</th>
-          <th>Code</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><em>italics</em></td>
-          <td><strong>bold</strong></td>
-          <td><code>code</code></td>
-      </tr>
-  </tbody>
-</table></div>
-<div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>A</th>
-          <th>B</th>
-          <th>C</th>
-          <th>D</th>
-          <th>E</th>
-          <th>F</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-          <td>Phasellus ultricies, sapien non euismod aliquam, dui ligula tincidunt odio, at accumsan nulla sapien eget ex.</td>
-          <td>Proin eleifend dictum ipsum, non euismod ipsum pulvinar et. Vivamus sollicitudin, quam in pulvinar aliquam, metus elit pretium purus</td>
-          <td>Proin sit amet velit nec enim imperdiet vehicula.</td>
-          <td>Ut bibendum vestibulum quam, eu egestas turpis gravida nec</td>
-          <td>Sed scelerisque nec turpis vel viverra. Vivamus vitae pretium sapien</td>
-      </tr>
-  </tbody>
-</table></div>
-<h2 id="code-blocks">Code Blocks
-</h2><h4 id="code-block-with-backticks">Code block with backticks
-</h4><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="code-block-indented-with-four-spaces">Code block indented with four spaces
-</h4><pre><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;p&gt;Test&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<h4 id="code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo&rsquo;s internal highlight shortcode
-</h4><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></span></span></code></pre></td></tr></table>
-</div>
-</div>
-<h4 id="diff-code-block">Diff code block
-</h4><div class="highlight"><div class="chroma">
+    <h2 id="1-主页面美化">1 主页面美化
+</h2><h3 id="11-修改头像">1.1 修改头像
+</h3><ol>
+<li>
+<p>修改主目录 <code>dev/</code> 下的 <strong>hugo.yaml</strong> 相关代码</p>
+</li>
+<li>
+<p>头像文件可以是.jpg / .gif，但是不能使用.svg，头像文件存放在<code>dev\assets\img</code>下</p>
+</li>
+</ol>
+<h3 id="12-修改主页头像下的链接">1.2 修改主页头像下的链接
+</h3><ol>
+<li>
+<p>修改主目录 <code>dev/</code> 下的 <strong>hugo.yaml</strong> 相关代码</p>
+</li>
+<li>
+<p>链接图标采用.svg，图标文件存放在dev\assets\icons下</p>
+</li>
+<li>
+<p>链接所需要的icon元素可以在网页&lt;<a class="link" href="https://tabler.io/icons"  target="_blank" rel="noopener"
+    >Tabler Icons: 5900+ free vector icons for web design</a>&gt;找到</p>
+</li>
+</ol>
+<h3 id="13-关键词检索和标签云设置">1.3 关键词检索和标签云设置
+</h3><ol>
+<li>修改主目录 <code>dev/</code> 下的 <strong>hugo.yaml</strong> 相关代码</li>
+</ol>
+<h3 id="14-其他">1.4 其他
+</h3><p>标签/发布日期时间格式/个性签名/主页最下方的小字/<strong>评论功能的配置</strong>都可以在主目录的<strong>hugo.yaml下</strong>修改代码实现</p>
+<h2 id="2-如何为博客添加内容">2 如何为博客添加内容
+</h2><h3 id="21-如何新增一篇博客">2.1 如何新增一篇博客
+</h3><ol>
+<li>修改主目录 <code>dev/content/post</code> 下的相关内容，若想新增一篇新的博客，只需要新建一个文件夹，文件夹名称和文章名称<strong>一致</strong>，在该文件夹下新建一个index.md文件，此后在该文件中进行编辑即可。</li>
+</ol>
+<h3 id="22-如何为博客添加图片">2.2 如何为博客添加图片
+</h3><ol>
+<li>
+<p>找到对应文件夹下的index.md文件，编辑下面代码中的image项</p>
+<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -751,86 +613,486 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">[dependencies.bevy]
-</span></span><span class="line"><span class="cl">git = &#34;https://github.com/bevyengine/bevy&#34;
-</span></span><span class="line"><span class="cl">rev = &#34;11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13&#34;
-</span></span><span class="line"><span class="cl"><span class="gd">- features = [&#34;dynamic&#34;]
-</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+ features = [&#34;jpeg&#34;, &#34;dynamic&#34;]
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">date = &#39;2025-09-08T20:32:25+08:00&#39;
+</span></span><span class="line"><span class="cl">draft = true
+</span></span><span class="line"><span class="cl">title = &#39;部分操作指南&#39;
+</span></span><span class="line"><span class="cl">description = &#39;个人使用记录&#39;
+</span></span><span class="line"><span class="cl">image = &#39;we_are_all_clowns.jpg&#39;
+</span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="list-types">List Types
-</h2><h4 id="ordered-list">Ordered List
-</h4><ol>
-<li>First item</li>
-<li>Second item</li>
-<li>Third item</li>
+</div></li>
+<li>
+<p>将所需的图片文件放在对应文件夹的目录下即可，此处为<code>E:\crazyIdeas\hugoWeb\dev\content\post\部分操作指南</code></p>
+</li>
 </ol>
-<h4 id="unordered-list">Unordered List
+<h1 id="">
+</h1><h2 id="3-美化方法">3 美化方法
+</h2><h3 id="31-博客内容美化">3.1 博客内容美化
+</h3><h4 id="311-macos风格的代码块">3.1.1 macOS风格的代码块
 </h4><ul>
-<li>List item</li>
-<li>Another item</li>
-<li>And another item</li>
-</ul>
-<h4 id="nested-list">Nested list
-</h4><ul>
-<li>Fruit
-<ul>
-<li>Apple</li>
-<li>Orange</li>
-<li>Banana</li>
-</ul>
+<li>
+<p>(1) 准备一张macOS代码块的<a class="link" href="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-stack-theme/macOS-code-header.svg"  target="_blank" rel="noopener"
+    ><strong>红绿灯图片</strong></a>(Ctrl+S保存), 放到<code>static/icons</code>文件夹下</p>
 </li>
-<li>Dairy
-<ul>
-<li>Milk</li>
-<li>Cheese</li>
-</ul>
+<li>
+<p>(2) 将以下代码复制进<code>assets/scss/custom.scss</code>文件中(不存在则自行创建)</p>
 </li>
 </ul>
-<h2 id="other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark
-</h2><p><abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.</p>
-<p>H<sub>2</sub>O</p>
-<p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
-<p>Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.</p>
-<p>Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
-<h2 id="hyperlinked-image">Hyperlinked image
-</h2><p><a class="link" href="https://google.com"  target="_blank" rel="noopener"
-    ><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="o">.</span><span class="n">highlight</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">:</span> <span class="k">var</span><span class="p">(</span><span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">max</span><span class="o">-</span><span class="n">width</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="p">:</span> <span class="k">var</span><span class="p">(</span><span class="o">--</span><span class="n">shadow</span><span class="o">-</span><span class="n">l1</span><span class="p">)</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">.</span><span class="n">highlight</span><span class="p">:</span><span class="n">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">content</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">display</span><span class="p">:</span> <span class="n">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">background</span><span class="p">:</span> <span class="n">url</span><span class="p">(</span><span class="o">../</span><span class="n">icons</span><span class="o">/</span><span class="n">macOS</span><span class="o">-</span><span class="n">code</span><span class="o">-</span><span class="n">header</span><span class="o">.</span><span class="n">svg</span><span class="p">)</span> <span class="n">no</span><span class="o">-</span><span class="n">repeat</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">background</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="n">contain</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">height</span><span class="p">:</span> <span class="mi">18</span><span class="n">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">margin</span><span class="o">-</span><span class="n">top</span><span class="p">:</span> <span class="o">-</span><span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">margin</span><span class="o">-</span><span class="n">bottom</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="312-代码块过长折叠展开">3.1.2 代码块过长折叠&amp;展开
+</h4><ul>
+<li>
+<p>(1) 准备一张<a class="link" href="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-stack-theme/codeMore.png"  target="_blank" rel="noopener"
+    ><strong>向下展开图片</strong></a>(Ctrl+S保存)，放到<code>assets/icons</code>目录下</p>
+</li>
+<li>
+<p>(2) 将以下代码复制进<code>layouts/partials/footer/custom.html</code>(文件不存在则自行创建)</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;style&gt;
+</span></span><span class="line"><span class="cl">    .highlight {
+</span></span><span class="line"><span class="cl">        /* 你可以根据需要调整这个高度 */
+</span></span><span class="line"><span class="cl">        max-height: 400px;
+</span></span><span class="line"><span class="cl">        overflow: hidden;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    .code-show {
+</span></span><span class="line"><span class="cl">        max-height: none !important;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    .code-more-box {
+</span></span><span class="line"><span class="cl">        width: 100%;
+</span></span><span class="line"><span class="cl">        padding-top: 78px;
+</span></span><span class="line"><span class="cl">        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#fff));
+</span></span><span class="line"><span class="cl">        position: absolute;
+</span></span><span class="line"><span class="cl">        left: 0;
+</span></span><span class="line"><span class="cl">        right: 0;
+</span></span><span class="line"><span class="cl">        bottom: 0;
+</span></span><span class="line"><span class="cl">        z-index: 1;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    .code-more-btn {
+</span></span><span class="line"><span class="cl">        display: block;
+</span></span><span class="line"><span class="cl">        margin: auto;
+</span></span><span class="line"><span class="cl">        width: 44px;
+</span></span><span class="line"><span class="cl">        height: 22px;
+</span></span><span class="line"><span class="cl">        background: #f0f0f5;
+</span></span><span class="line"><span class="cl">        border-top-left-radius: 8px;
+</span></span><span class="line"><span class="cl">        border-top-right-radius: 8px;
+</span></span><span class="line"><span class="cl">        padding-top: 6px;
+</span></span><span class="line"><span class="cl">        cursor: pointer;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    .code-more-img {
+</span></span><span class="line"><span class="cl">        cursor: pointer !important;
+</span></span><span class="line"><span class="cl">        display: block;
+</span></span><span class="line"><span class="cl">        margin: auto;
+</span></span><span class="line"><span class="cl">        width: 22px;
+</span></span><span class="line"><span class="cl">        height: 16px;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">&lt;/style&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;script&gt;
+</span></span><span class="line"><span class="cl">  function initCodeMoreBox() {
+</span></span><span class="line"><span class="cl">    let codeBlocks = document.querySelectorAll(&#34;.highlight&#34;);
+</span></span><span class="line"><span class="cl">    if (!codeBlocks) {
+</span></span><span class="line"><span class="cl">      return;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    codeBlocks.forEach(codeBlock =&gt; {
+</span></span><span class="line"><span class="cl">      // 校验是否overflow
+</span></span><span class="line"><span class="cl">      if (codeBlock.scrollHeight &lt;= codeBlock.clientHeight) {
+</span></span><span class="line"><span class="cl">        return;
+</span></span><span class="line"><span class="cl">      }
+</span></span><span class="line"><span class="cl">      // 元素初始化
+</span></span><span class="line"><span class="cl">      // codeMoreBox
+</span></span><span class="line"><span class="cl">      let codeMoreBox = document.createElement(&#39;div&#39;);
+</span></span><span class="line"><span class="cl">      codeMoreBox.classList.add(&#39;code-more-box&#39;);
+</span></span><span class="line"><span class="cl">      // codeMoreBtn
+</span></span><span class="line"><span class="cl">      let codeMoreBtn = document.createElement(&#39;span&#39;);
+</span></span><span class="line"><span class="cl">      codeMoreBtn.classList.add(&#39;code-more-btn&#39;);
+</span></span><span class="line"><span class="cl">      codeMoreBtn.addEventListener(&#39;click&#39;, () =&gt; {
+</span></span><span class="line"><span class="cl">        codeBlock.classList.add(&#39;code-show&#39;);
+</span></span><span class="line"><span class="cl">        codeMoreBox.style.display = &#39;none&#39;;
+</span></span><span class="line"><span class="cl">        // 触发resize事件，重新计算目录位置
+</span></span><span class="line"><span class="cl">        window.dispatchEvent(new Event(&#39;resize&#39;))
+</span></span><span class="line"><span class="cl">      })
+</span></span><span class="line"><span class="cl">      // img
+</span></span><span class="line"><span class="cl">      let img = document.createElement(&#39;img&#39;);
+</span></span><span class="line"><span class="cl">      img.classList.add(&#39;code-more-img&#39;);
+</span></span><span class="line"><span class="cl">      img.src = {{ (resources.Get &#34;icons/codeMore.png&#34;).Permalink }}
+</span></span><span class="line"><span class="cl">      // 元素添加
+</span></span><span class="line"><span class="cl">      codeMoreBtn.appendChild(img);
+</span></span><span class="line"><span class="cl">      codeMoreBox.appendChild(codeMoreBtn);
+</span></span><span class="line"><span class="cl">      codeBlock.appendChild(codeMoreBox)
+</span></span><span class="line"><span class="cl">    })
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  initCodeMoreBox();
+</span></span><span class="line"><span class="cl">&lt;/script&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(3)因为在博客中引入了Pjax，新添加的这段 <code>initCodeMoreBox()</code> 脚本目前只会在页面<strong>首次加载</strong>时运行一次。这意味着，当通过点击链接（PJAX 跳转）进入另一篇文章页面时，<code>initCodeMoreBox()</code> <strong>不会重新运行</strong>，导致新页面的代码块将<strong>不会出现</strong>“展开更多”的按钮。为了解决这个问题，你需要让这个函数在每次 PJAX 加载完成后也执行一次。</li>
+</ul>
+<p>        <strong>把现有代码丢给AI，直接解决了，Gemini王朝了</strong></p>
+<h4 id="313-自定义md引用块颜色模板">3.1.3 自定义MD引用块颜色模板
+</h4><ul>
+<li>
+<p>参考文章：<a class="link" href="https://blog.hentioe.dev/posts/hugo-support-blockquote-alerts.html"  target="_blank" rel="noopener"
+    ><strong>让Hugo支持GitHub风格的块引用Alerts</strong></a></p>
+</li>
+<li>
+<p>(1) 创建文件<code>layouts/_default/_markup/render-blockquote-alert.html</code>，并将以下代码复制进去</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;blockquote class=&#34;alert alert-{{ .AlertType }}&#34;&gt;
+</span></span><span class="line"><span class="cl">    {{ .Text | safeHTML -}}
+</span></span><span class="line"><span class="cl">&lt;/blockquote&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(2) 将以下代码复制进<code>assets/scss/custom.scss</code>
+<ul>
+<li>配色参考来源：<a class="link" href="https://github.com/martignoni/hugo-notice"  target="_blank" rel="noopener"
+    ><strong>martignoni/hugo-notice</strong></a></li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[data-scheme=&#34;light&#34;] {
+</span></span><span class="line"><span class="cl">  .alert-note {
+</span></span><span class="line"><span class="cl">    --card-separator-color: #65bbee;
+</span></span><span class="line"><span class="cl">    --blockquote-background-color: #e7f2fa;
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">  .alert-tip {
+</span></span><span class="line"><span class="cl">    --card-separator-color: #55aa55;
+</span></span><span class="line"><span class="cl">    --blockquote-background-color: #eeffee;
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">  .alert-warn {
+</span></span><span class="line"><span class="cl">    --card-separator-color: #ffbb78;
+</span></span><span class="line"><span class="cl">    --blockquote-background-color: #ffeecc;
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">  .alert-error {
+</span></span><span class="line"><span class="cl">    --card-separator-color: #cc3334;
+</span></span><span class="line"><span class="cl">    --blockquote-background-color: #ffeeef;
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[data-scheme=&#34;dark&#34;] {
+</span></span><span class="line"><span class="cl">  .alert-note {
+</span></span><span class="line"><span class="cl">    --card-separator-color: #006699;
+</span></span><span class="line"><span class="cl">    --blockquote-background-color: #002234;
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">  .alert-tip {
+</span></span><span class="line"><span class="cl">    --card-separator-color: #336733;
+</span></span><span class="line"><span class="cl">    --blockquote-background-color: #112310;
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">  .alert-warn {
+</span></span><span class="line"><span class="cl">    --card-separator-color: #aa5501;
+</span></span><span class="line"><span class="cl">    --blockquote-background-color: #452300;
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">  .alert-error {
+</span></span><span class="line"><span class="cl">    --card-separator-color: #880000;
+</span></span><span class="line"><span class="cl">    --blockquote-background-color: #450000;
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(3) 使用方法
+<ul>
+<li>可选项：<strong>NOTE</strong> | <strong>TIP</strong> | <strong>WARN</strong> | <strong>ERROR</strong></li>
+<li>可仿照上面css写法，自行添加新的css样式，来实现更多的可选项</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&gt; [!NOTE]
+</span></span><span class="line"><span class="cl">&gt; 这是markdown的引用块语法
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(4) 效果演示</li>
+</ul>
+<blockquote class="alert alert-note">
+    <p>这是NOTE风格</p></blockquote>
+<blockquote class="alert alert-tip">
+    <p>这是TIP风格</p></blockquote>
+<h4 id="314-更改目录的显示">3.1.4 更改目录的显示
+</h4><ol>
+<li>现在目录的格式如下</li>
+</ol>
+<p><img src="E:%5ccrazyIdeas%5chugoWeb%5cdev%5ccontent%5cpost%5c%e9%83%a8%e5%88%86%e6%93%8d%e4%bd%9c%e6%8c%87%e5%8d%97%5ccontent_before.png"
 	
 	
 	
 	loading="lazy"
 	
-		alt="Google"
+		alt="这是图片"
 	
 	
-></a></p>
-<div class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p>The above quote is excerpted from Rob Pike&rsquo;s <a class="link" href="https://www.youtube.com/watch?v=PAAkCSZUG1c"  target="_blank" rel="noopener"
-    >talk</a> during Gopherfest, November 18, 2015.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+></p>
+<ol start="2">
+<li>
+<p>现在我想要更改文章目录（Table of Contents, TOC）的显示样式，去掉前面的数字角标（如 <code>1.</code>、<code>1.1.</code>），只保留一个点或者其他符号，目前的配置文件（<code>hugo.yaml</code>）中已经正确地设置了生成目录的逻辑，现在我们需要做的就是改变它的<strong>外观</strong>。</p>
+</li>
+<li>
+<p>其实还是在主目录下的<strong>hugo.yaml</strong>修改就可以了</p>
 </li>
 </ol>
+<p>在 <code>hugo.yaml</code> 配置文件中，与目录（TOC）相关的部分在这里：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">markup:
+</span></span><span class="line"><span class="cl">  # ... 其他 goldmark 配置 ...
+</span></span><span class="line"><span class="cl">  tableOfContents:
+</span></span><span class="line"><span class="cl">    endLevel: 4
+</span></span><span class="line"><span class="cl">    ordered: true  # &lt;--- 这个是关键,将其改成false就可以了
+</span></span><span class="line"><span class="cl">    startLevel: 2
+</span></span></code></pre></td></tr></table>
 </div>
+</div><h3 id="32-主页字体和鼠标修改">3.2 主页字体和鼠标修改
+</h3><h4 id="321-修改字体">3.2.1 修改字体
+</h4><ol>
+<li>
+<p>把字体文件放入<code>assets/font</code>下</p>
+</li>
+<li>
+<p>将以下代码修改并复制到<code>layouts/partials/footer/custom.html</code>文件中(文件不存在就自己创建)</p>
+<ul>
+<li><strong>字体名</strong>：给字体命名一个别名，随便填写就好，保持统一就行</li>
+<li><strong>字体文件名</strong>：字体文件的全名，带后缀名的，也就是 <strong>xxx.ttf</strong></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;style&gt;
+</span></span><span class="line"><span class="cl">  @font-face {
+</span></span><span class="line"><span class="cl">    font-family: &#39;字体名&#39;;
+</span></span><span class="line"><span class="cl">    src: url({{ (resources.Get &#34;font/字体文件名&#34;).Permalink }}) format(&#39;truetype&#39;);
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  :root {
+</span></span><span class="line"><span class="cl">    --base-font-family: &#39;字体名&#39;;
+</span></span><span class="line"><span class="cl">    --code-font-family: &#39;字体名&#39;;
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">&lt;/style&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h4 id="322-修改鼠标样式">3.2.2 修改鼠标样式
+</h4><ol>
+<li>参考链接&lt;<a class="link" href="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-stack-theme/"  target="_blank" rel="noopener"
+    >【Hugo】Stack主题自定义修改</a>&gt;</li>
+</ol>
+<h2 id="4-一些零散的修改">4 一些零散的修改
+</h2><h3 id="41-主页友链links相关">4.1 主页友链links相关
+</h3><h3 id="411-友链归档多列显示">4.1.1 友链、归档多列显示
+</h3><ul>
+<li>修改<code>assets/scss/custom.scss</code>文件</li>
+</ul>
+<h3 id="412-如何添加友链">4.1.2 如何添加友链
+</h3><h3 id="42-如何添加更多的音乐">4.2 如何添加更多的音乐
+</h3>
 </section>
 
 
     <footer class="article-footer">
     
-    <section class="article-tags">
-        
-            <a href="/hugo-dev/tags/markdown/">Markdown</a>
-        
-            <a href="/hugo-dev/tags/css/">Css</a>
-        
-            <a href="/hugo-dev/tags/html/">Html</a>
-        
-            <a href="/hugo-dev/tags/themes/">Themes</a>
-        
-    </section>
-
 
     
     <section class="article-copyright">
@@ -854,7 +1116,7 @@
 
 
         <span>
-            最后更新于 2025-09-08 20:27
+            最后更新于 2025-09-12 18:06
         </span>
     </section></footer>
 
