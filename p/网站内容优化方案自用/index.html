@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="个人使用记录">
+<title>网站内容优化方案（自用）</title>
+
+<link rel='canonical' href='https://BucketSran.github.io/hugo-dev/p/%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88%E8%87%AA%E7%94%A8/'>
+
+<link rel="stylesheet" href="/hugo-dev/scss/style.min.ae54681ce641f43ab64303408cf70ecf1537b863ea0cba92f464ebd8ce04dd49.css"><meta property='og:title' content="网站内容优化方案（自用）">
+<meta property='og:description' content="个人使用记录">
+<meta property='og:url' content='https://BucketSran.github.io/hugo-dev/p/%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88%E8%87%AA%E7%94%A8/'>
+<meta property='og:site_name' content='BucketSran'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-09-08T20:32:25&#43;08:00'/><meta property='article:modified_time' content='2025-09-13T02:48:06&#43;08:00'/><meta property='og:image' content='https://BucketSran.github.io/hugo-dev/p/%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88%E8%87%AA%E7%94%A8/we_are_all_clowns.jpg' />
+<meta name="twitter:title" content="网站内容优化方案（自用）">
+<meta name="twitter:description" content="个人使用记录"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://BucketSran.github.io/hugo-dev/p/%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88%E8%87%AA%E7%94%A8/we_are_all_clowns.jpg' />
+    <link rel="shortcut icon" href="/hugo-dev/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<div class="loading">
+    <div class="sharingon">
+        <div class="ring">
+            <div class="to"></div>
+            <div class="to"></div>
+            <div class="to"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .loading {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        zoom: 3.0;
+        background-color: #f5f5fa;
+    }
+	
+    .animated-stop {
+        animation-play-state: paused !important;
+    }
+	
+    .scaleAndFadeout {
+        animation: scaleAndFadeOut 1.5s forwards;
+    }
+	
+     
+    @keyframes scaleAndFadeOut {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+    }
+
+     
+    .sharingon {
+        position: relative;
+        width: 6em;
+        height: 6em;
+        background-color: red;
+        border: 6px solid black;
+        animation: rot 1s ease-in-out infinite;
+    }
+
+    .ring {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 50%;
+        width: 3.5em;
+        height: 3.5em;
+        border: 4px solid rgb(110, 13 ,13 ,0.5);
+        transform: translate(-50%,-50%);
+    }
+
+    .sharingon, .ring, .to,.circle {
+        border-radius: 50%;
+    }
+
+    .to,.circle {
+        position: absolute;
+        content: "";
+        width: 0.9em;
+        height: 0.9em;
+        background-color: black;
+    }
+
+    .to:nth-child(1) {
+        top: -0.5em;
+        left: 50%;
+        transform: translate(-40%);
+    }
+
+    .to::before {
+        content: "";
+        position: absolute;
+        top: -0.5em;
+        right: -0.2em;
+        width: 1.1em;
+        height: 0.9em;
+        box-sizing: border-box;
+        border-left: 16px solid black;
+        border-radius: 100% 0 0;
+    }
+
+    .to:nth-child(2) {
+        bottom: 0.5em;
+        left: -0.35em;
+        transform: rotate(-120deg);
+    }
+
+    .to:nth-child(3) {
+        bottom: 0.5em;
+        right: -0.35em;
+        transform: rotate(120deg);
+    }
+
+    .circle {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 0 0 20px 1px;
+        width: 1em;
+        height: 1em;
+    }
+
+    @keyframes rot {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<script>	
+    function initLoading() {
+        let loading = document.querySelector(".loading");
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            
+            loadFinish();
+            
+            setTimeout(() => {
+                loading.style.display = "none";
+            }, 1500)
+        });
+    }
+	
+    function loadFinish() {
+        
+        let sharingon= document.querySelector(".sharingon");
+        sharingon.classList.add("animated-stop")
+        
+        let loading = document.querySelector(".loading");
+        loading.classList.add("scaleAndFadeout")
+    }
+	
+    initLoading();
+</script>
+
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/hugo-dev/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/hugo-dev/img/fulinna_hu_a452475fda03c2c7.gif" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😍</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/hugo-dev">BucketSran</a></h1>
+            <h2 class="site-description">欲买桂花同载酒，终不似，少年游</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://space.bilibili.com/431091272'
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bilibili"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" /><path d="M8 3l2 3" /><path d="M16 3l-2 3" /><path d="M9 13v-2" /><path d="M15 11v2" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/BucketSran/hugo-dev'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.douyin.com/user/self'
+                        target="_blank"
+                        title="TikTok"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/hugo-dev/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>博客 | Blog</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/hugo-dev/%E7%AE%80%E4%BB%8B-introduction/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>简介 |  Introduction</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/hugo-dev/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档 | Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/hugo-dev/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索 | Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/hugo-dev/%E9%93%BE%E6%8E%A5-links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接 | Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-主页面美化">1 主页面美化</a>
+      <ul>
+        <li><a href="#11-修改头像">1.1 修改头像</a></li>
+        <li><a href="#12-修改主页头像下的链接">1.2 修改主页头像下的链接</a></li>
+        <li><a href="#13-关键词检索和标签云设置">1.3 关键词检索和标签云设置</a></li>
+        <li><a href="#14-主页左边分类栏的名称如何修改">1.4 主页左边分类栏的名称如何修改</a></li>
+        <li><a href="#15-其他">1.5 其他</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-如何为博客添加内容">2 如何为博客添加内容</a>
+      <ul>
+        <li><a href="#21-如何新增一篇博客">2.1 如何新增一篇博客</a></li>
+        <li><a href="#22-如何为博客添加封面">2.2 如何为博客添加封面</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-美化方法">3 美化方法</a>
+      <ul>
+        <li><a href="#31-博客内容美化">3.1 博客内容美化</a>
+          <ul>
+            <li><a href="#311-macos风格的代码块">3.1.1 macOS风格的代码块</a></li>
+            <li><a href="#312-代码块过长折叠展开">3.1.2 代码块过长折叠&amp;展开</a></li>
+            <li><a href="#313-自定义md引用块颜色模板">3.1.3 自定义MD引用块颜色模板</a></li>
+            <li><a href="#314-更改目录的显示">3.1.4 更改目录的显示</a></li>
+          </ul>
+        </li>
+        <li><a href="#32-主页字体和鼠标修改">3.2 主页字体和鼠标修改</a>
+          <ul>
+            <li><a href="#321-修改字体">3.2.1 修改字体</a></li>
+            <li><a href="#322-修改鼠标样式">3.2.2 修改鼠标样式</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#4-一些零散的修改">4 一些零散的修改</a>
+      <ul>
+        <li><a href="#41-主页友链links相关">4.1 主页友链links相关</a></li>
+        <li><a href="#411-友链归档多列显示">4.1.1 友链、归档多列显示</a></li>
+        <li><a href="#412-如何添加友链">4.1.2 如何添加友链</a></li>
+        <li><a href="#42-如何添加更多的音乐">4.2 如何添加更多的音乐</a>
+          <ul>
+            <li><a href="#421-获取音乐">4.2.1 获取音乐</a></li>
+            <li><a href="#422-操作步骤">4.2.2 操作步骤</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/hugo-dev/p/%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88%E8%87%AA%E7%94%A8/">
+                <img src="/hugo-dev/p/%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88%E8%87%AA%E7%94%A8/we_are_all_clowns_hu_dd454f511329383c.jpg"
+                        srcset="/hugo-dev/p/%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88%E8%87%AA%E7%94%A8/we_are_all_clowns_hu_dd454f511329383c.jpg 800w, /hugo-dev/p/%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88%E8%87%AA%E7%94%A8/we_are_all_clowns_hu_b60cbe05d4a10b1a.jpg 1600w"
+                        width="800" 
+                        height="800" 
+                        loading="lazy"
+                        alt="Featured image of post 网站内容优化方案（自用）" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/hugo-dev/categories/%E6%95%99%E7%A8%8B/" style="background-color: #2a9d8f; color: #fff;">
+                教程
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/hugo-dev/p/%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88%E8%87%AA%E7%94%A8/">网站内容优化方案（自用）</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            个人使用记录
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-09-08</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 6 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="1-主页面美化">1 主页面美化
+</h2><h3 id="11-修改头像">1.1 修改头像
+</h3><ol>
+<li>
+<p>修改主目录 <code>dev/</code> 下的 <strong>hugo.yaml</strong> 相关代码</p>
+</li>
+<li>
+<p>头像文件可以是.jpg / .gif，但是不能使用.svg，头像文件存放在<code>dev\assets\img</code>下</p>
+</li>
+</ol>
+<h3 id="12-修改主页头像下的链接">1.2 修改主页头像下的链接
+</h3><ol>
+<li>
+<p>修改主目录 <code>dev/</code> 下的 <strong>hugo.yaml</strong> 相关代码</p>
+</li>
+<li>
+<p>链接图标采用.svg，图标文件存放在dev\assets\icons下</p>
+</li>
+<li>
+<p>链接所需要的icon元素可以在网页&lt;<a class="link" href="https://tabler.io/icons"  target="_blank" rel="noopener"
+    >Tabler Icons: 5900+ free vector icons for web design</a>&gt;找到</p>
+</li>
+</ol>
+<h3 id="13-关键词检索和标签云设置">1.3 关键词检索和标签云设置
+</h3><ol>
+<li>修改主目录 <code>dev/</code> 下的 <strong>hugo.yaml</strong> 相关代码</li>
+</ol>
+<h3 id="14-主页左边分类栏的名称如何修改">1.4 主页左边分类栏的名称如何修改
+</h3><ol>
+<li>在<code>dev/content/page</code>下文件夹的名称对应左边栏，进入这几个文件夹修改<strong>index.md</strong>文件的title一行值即可</li>
+</ol>
+<h3 id="15-其他">1.5 其他
+</h3><p>标签/发布日期时间格式/个性签名/主页最下方的小字/<strong>评论功能的配置</strong>都可以在主目录的<strong>hugo.yaml下</strong>修改代码实现</p>
+<h2 id="2-如何为博客添加内容">2 如何为博客添加内容
+</h2><h3 id="21-如何新增一篇博客">2.1 如何新增一篇博客
+</h3><ol>
+<li>修改主目录 <code>dev/content/post</code> 下的相关内容，若想新增一篇新的博客，只需要新建一个文件夹，文件夹名称和文章名称<strong>一致</strong>，在该文件夹下新建一个index.md文件，此后在该文件中进行编辑即可。</li>
+</ol>
+<h3 id="22-如何为博客添加封面">2.2 如何为博客添加封面
+</h3><ol>
+<li>
+<p>找到对应文件夹下的index.md文件，编辑下面代码中的image项</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="n">date</span> <span class="o">=</span> <span class="err">&#39;</span><span class="mi">2025</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">08</span><span class="nl">T20</span><span class="p">:</span><span class="mi">32</span><span class="o">:</span><span class="mi">25</span><span class="o">+</span><span class="mi">08</span><span class="o">:</span><span class="mo">00</span><span class="err">&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">draft</span> <span class="o">=</span> <span class="nb">true</span>
+</span></span><span class="line"><span class="cl"><span class="n">title</span> <span class="o">=</span> <span class="err">&#39;部分操作指南&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">description</span> <span class="o">=</span> <span class="err">&#39;个人使用记录&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">image</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">we_are_all_clowns</span><span class="p">.</span><span class="n">jpg</span><span class="err">&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>将所需的图片文件放在对应文件夹的目录下即可，此处为<code>E:\crazyIdeas\hugoWeb\dev\content\post\部分操作指南</code></p>
+</li>
+</ol>
+<h2 id="3-美化方法">3 美化方法
+</h2><h3 id="31-博客内容美化">3.1 博客内容美化
+</h3><h4 id="311-macos风格的代码块">3.1.1 macOS风格的代码块
+</h4><ul>
+<li>
+<p>(1) 准备一张macOS代码块的<a class="link" href="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-stack-theme/macOS-code-header.svg"  target="_blank" rel="noopener"
+    ><strong>红绿灯图片</strong></a>(Ctrl+S保存), 放到<code>static/icons</code>文件夹下</p>
+</li>
+<li>
+<p>(2) 将以下代码复制进<code>assets/scss/custom.scss</code>文件中(不存在则自行创建)</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="p">.</span><span class="n">highlight</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">border</span><span class="o">-</span><span class="nl">radius</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">max</span><span class="o">-</span><span class="nl">width</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">box</span><span class="o">-</span><span class="nl">shadow</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">shadow</span><span class="o">-</span><span class="n">l1</span><span class="p">)</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nl">highlight</span><span class="p">:</span><span class="n">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">content</span><span class="p">:</span> <span class="s">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">display</span><span class="p">:</span> <span class="n">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">background</span><span class="p">:</span> <span class="nf">url</span><span class="p">(..</span><span class="o">/</span><span class="n">icons</span><span class="o">/</span><span class="n">macOS</span><span class="o">-</span><span class="n">code</span><span class="o">-</span><span class="n">header</span><span class="p">.</span><span class="n">svg</span><span class="p">)</span> <span class="n">no</span><span class="o">-</span><span class="n">repeat</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">background</span><span class="o">-</span><span class="nl">size</span><span class="p">:</span> <span class="n">contain</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">height</span><span class="p">:</span> <span class="mi">18</span><span class="n">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">margin</span><span class="o">-</span><span class="nl">top</span><span class="p">:</span> <span class="o">-</span><span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">margin</span><span class="o">-</span><span class="nl">bottom</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="312-代码块过长折叠展开">3.1.2 代码块过长折叠&amp;展开
+</h4><ul>
+<li>
+<p>(1) 准备一张<a class="link" href="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-stack-theme/codeMore.png"  target="_blank" rel="noopener"
+    ><strong>向下展开图片</strong></a>(Ctrl+S保存)，放到<code>assets/icons</code>目录下</p>
+</li>
+<li>
+<p>(2) 将以下代码复制进<code>layouts/partials/footer/custom.html</code>(文件不存在则自行创建)</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">highlight</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 你可以根据需要调整这个高度 */</span>
+</span></span><span class="line"><span class="cl">        <span class="k">max-height</span><span class="p">:</span> <span class="mi">400</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">code-show</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">max-height</span><span class="p">:</span> <span class="kc">none</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">code-more-box</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">padding-top</span><span class="p">:</span> <span class="mi">78</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">background-image</span><span class="p">:</span> <span class="kp">-webkit-</span><span class="nf">gradient</span><span class="p">(</span><span class="kc">linear</span><span class="p">,</span> <span class="kc">left</span> <span class="kc">top</span><span class="p">,</span> <span class="kc">left</span> <span class="kc">bottom</span><span class="p">,</span> <span class="nf">from</span><span class="p">(</span><span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)),</span> <span class="nf">to</span><span class="p">(</span><span class="mh">#fff</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">z-index</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">code-more-btn</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">margin</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">width</span><span class="p">:</span> <span class="mi">44</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">height</span><span class="p">:</span> <span class="mi">22</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">background</span><span class="p">:</span> <span class="mh">#f0f0f5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">border-top-left-radius</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">border-top-right-radius</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">padding-top</span><span class="p">:</span> <span class="mi">6</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">code-more-img</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">margin</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">width</span><span class="p">:</span> <span class="mi">22</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">height</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">function</span> <span class="nx">initCodeMoreBox</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">codeBlocks</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">&#34;.highlight&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">codeBlocks</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">codeBlocks</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">codeBlock</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="c1">// 校验是否overflow
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="k">if</span> <span class="p">(</span><span class="nx">codeBlock</span><span class="p">.</span><span class="nx">scrollHeight</span> <span class="o">&lt;=</span> <span class="nx">codeBlock</span><span class="p">.</span><span class="nx">clientHeight</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="c1">// 元素初始化
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="c1">// codeMoreBox
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="kd">let</span> <span class="nx">codeMoreBox</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">codeMoreBox</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;code-more-box&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="c1">// codeMoreBtn
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="kd">let</span> <span class="nx">codeMoreBtn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">codeMoreBtn</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;code-more-btn&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">codeMoreBtn</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">codeBlock</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;code-show&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">codeMoreBox</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 触发resize事件，重新计算目录位置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nb">window</span><span class="p">.</span><span class="nx">dispatchEvent</span><span class="p">(</span><span class="k">new</span> <span class="nx">Event</span><span class="p">(</span><span class="s1">&#39;resize&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">      <span class="p">})</span>
+</span></span><span class="line"><span class="cl">      <span class="c1">// img
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="kd">let</span> <span class="nx">img</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;img&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">img</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;code-more-img&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">img</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="p">{{</span> <span class="p">(</span><span class="nx">resources</span><span class="p">.</span><span class="nx">Get</span> <span class="s2">&#34;icons/codeMore.png&#34;</span><span class="p">).</span><span class="nx">Permalink</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">      <span class="c1">// 元素添加
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="nx">codeMoreBtn</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">img</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">codeMoreBox</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">codeMoreBtn</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">codeBlock</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">codeMoreBox</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">initCodeMoreBox</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(3)因为在博客中引入了Pjax，新添加的这段 <code>initCodeMoreBox()</code> 脚本目前只会在页面<strong>首次加载</strong>时运行一次。这意味着，当通过点击链接（PJAX 跳转）进入另一篇文章页面时，<code>initCodeMoreBox()</code> <strong>不会重新运行</strong>，导致新页面的代码块将<strong>不会出现</strong>“展开更多”的按钮。为了解决这个问题，你需要让这个函数在每次 PJAX 加载完成后也执行一次。</li>
+</ul>
+<p>        <strong>把现有代码丢给AI，直接解决了，Gemini王朝了</strong></p>
+<h4 id="313-自定义md引用块颜色模板">3.1.3 自定义MD引用块颜色模板
+</h4><ul>
+<li>
+<p>参考文章：<a class="link" href="https://blog.hentioe.dev/posts/hugo-support-blockquote-alerts.html"  target="_blank" rel="noopener"
+    ><strong>让Hugo支持GitHub风格的块引用Alerts</strong></a></p>
+</li>
+<li>
+<p>(1) 创建文件<code>layouts/_default/_markup/render-blockquote-alert.html</code>，并将以下代码复制进去</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">blockquote</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;alert alert-{{ .AlertType }}&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    {{ .Text | safeHTML -}}
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">blockquote</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(2) 将以下代码复制进<code>assets/scss/custom.scss</code>
+<ul>
+<li>配色参考来源：<a class="link" href="https://github.com/martignoni/hugo-notice"  target="_blank" rel="noopener"
+    ><strong>martignoni/hugo-notice</strong></a></li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="p">[</span><span class="n">data</span><span class="o">-</span><span class="n">scheme</span><span class="o">=</span><span class="s">&#34;light&#34;</span><span class="p">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="n">alert</span><span class="o">-</span><span class="n">note</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">separator</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="mi">65</span><span class="n">bbee</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">blockquote</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="n">e7f2fa</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="n">alert</span><span class="o">-</span><span class="n">tip</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">separator</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="mi">55</span><span class="n">aa55</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">blockquote</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="n">eeffee</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="n">alert</span><span class="o">-</span><span class="n">warn</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">separator</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="n">ffbb78</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">blockquote</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="n">ffeecc</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="n">alert</span><span class="o">-</span><span class="n">error</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">separator</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="n">cc3334</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">blockquote</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="n">ffeeef</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">data</span><span class="o">-</span><span class="n">scheme</span><span class="o">=</span><span class="s">&#34;dark&#34;</span><span class="p">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="n">alert</span><span class="o">-</span><span class="n">note</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">separator</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="mo">0066</span><span class="mi">99</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">blockquote</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="mo">002234</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="n">alert</span><span class="o">-</span><span class="n">tip</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">separator</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="mi">336733</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">blockquote</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="mi">112310</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="n">alert</span><span class="o">-</span><span class="n">warn</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">separator</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="n">aa5501</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">blockquote</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="mi">452300</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="n">alert</span><span class="o">-</span><span class="n">error</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">separator</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="mi">880000</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">blockquote</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="mi">450000</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(3) 使用方法
+<ul>
+<li>可选项：<strong>NOTE</strong> | <strong>TIP</strong> | <strong>WARN</strong> | <strong>ERROR</strong></li>
+<li>可仿照上面css写法，自行添加新的css样式，来实现更多的可选项</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&gt; [!NOTE]
+</span></span><span class="line"><span class="cl">&gt; 这是markdown的引用块语法
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(4) 效果演示</li>
+</ul>
+<blockquote class="alert alert-note">
+    <p>这是NOTE风格</p></blockquote>
+<blockquote class="alert alert-tip">
+    <p>这是TIP风格</p></blockquote>
+<h4 id="314-更改目录的显示">3.1.4 更改目录的显示
+</h4><ol>
+<li>
+<p>现在目录的格式如下</p>
+<img title="图片title" src="file:///E:/crazyIdeas/hugoWeb/dev/content/post/部分操作指南/content_before.png" alt="图片alt">
+</li>
+<li>
+<p>现在我想要更改文章目录（Table of Contents, TOC）的显示样式，去掉前面的数字角标（如 <code>1.</code>、<code>1.1.</code>），只保留一个点或者其他符号，目前的配置文件（<code>hugo.yaml</code>）中已经正确地设置了生成目录的逻辑，现在我们需要做的就是改变它的<strong>外观</strong>。</p>
+</li>
+<li>
+<p>其实还是在主目录下的<strong>hugo.yaml</strong>修改就可以了</p>
+</li>
+</ol>
+<p>在 <code>hugo.yaml</code> 配置文件中，与目录（TOC）相关的部分在这里：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">markup:
+</span></span><span class="line"><span class="cl">  # ... 其他 goldmark 配置 ...
+</span></span><span class="line"><span class="cl">  tableOfContents:
+</span></span><span class="line"><span class="cl">    endLevel: 4
+</span></span><span class="line"><span class="cl">    ordered: true  # <span class="p">&lt;</span><span class="nt">---</span> <span class="na">这个是关键</span><span class="err">,</span><span class="na">将其改成false就可以了</span>
+</span></span><span class="line"><span class="cl">    <span class="na">startLevel:</span> <span class="na">2</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="32-主页字体和鼠标修改">3.2 主页字体和鼠标修改
+</h3><h4 id="321-修改字体">3.2.1 修改字体
+</h4><ol>
+<li>
+<p>把字体文件放入<code>assets/font</code>下</p>
+</li>
+<li>
+<p>将以下代码修改并复制到<code>layouts/partials/footer/custom.html</code>文件中(文件不存在就自己创建)</p>
+<ul>
+<li><strong>字体名</strong>：给字体命名一个别名，随便填写就好，保持统一就行</li>
+<li><strong>字体文件名</strong>：字体文件的全名，带后缀名的，也就是 <strong>xxx.ttf</strong></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">font-family</span><span class="o">:</span> <span class="s1">&#39;字体名&#39;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="p">{</span><span class="err">{</span> <span class="err">(resources.Get</span> <span class="err">&#34;font/字体文件名&#34;).Permalink</span> <span class="p">}}</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;truetype&#39;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">  <span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--base-font-family</span><span class="p">:</span> <span class="s1">&#39;字体名&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--code-font-family</span><span class="p">:</span> <span class="s1">&#39;字体名&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h4 id="322-修改鼠标样式">3.2.2 修改鼠标样式
+</h4><ol>
+<li>参考链接&lt;<a class="link" href="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-stack-theme/"  target="_blank" rel="noopener"
+    >【Hugo】Stack主题自定义修改</a>&gt;</li>
+</ol>
+<h2 id="4-一些零散的修改">4 一些零散的修改
+</h2><h3 id="41-主页友链links相关">4.1 主页友链links相关
+</h3><h3 id="411-友链归档多列显示">4.1.1 友链、归档多列显示
+</h3><ul>
+<li>修改<code>assets/scss/custom.scss</code>文件，可以设置为2个/3个links同行</li>
+</ul>
+<h3 id="412-如何添加友链">4.1.2 如何添加友链
+</h3><ul>
+<li>修改<code>dev/content/page/links</code>下的<strong>index.md</strong>文件</li>
+<li>将所需的ico文件放在同样的<code>dev/content/page/links</code>文件夹下即可，ico文件可以通过&lt;<a class="link" href="https://favicon.im/zh"  target="_blank" rel="noopener"
+    >Favicon.im: 即时网站图标获取器</a>&gt;获得</li>
+</ul>
+<h3 id="42-如何添加更多的音乐">4.2 如何添加更多的音乐
+</h3><h4 id="421-获取音乐">4.2.1 获取音乐
+</h4><ul>
+<li>
+<p>可以在这个网站进行下载&lt;<a class="link" href="https://www.gequhai.com/"  target="_blank" rel="noopener"
+    >歌曲海</a>&gt;</p>
+</li>
+<li>
+<p>专辑的封面可以通过下面的网站获取<a class="link" href="https://i.oppsu.cn/"  target="_blank" rel="noopener"
+    >iSearch 4.5 专辑封面获取</a>，不过需要科学上网</p>
+</li>
+</ul>
+<h4 id="422-操作步骤">4.2.2 操作步骤
+</h4><ol>
+<li>
+<p>在<code>dev\public\music</code>添加对应的文件夹，命名方式以<code>许嵩 - 星座书上</code>为例</p>
+</li>
+<li>
+<p>文件夹中存放三个文件，分别为<code>cover.jpg</code> <code>lyric.lrc</code> <code>song.mp3</code></p>
+</li>
+<li>
+<p>在<code>dev\layouts\partials\footer</code>目录下修改 <strong>aplayer.html</strong></p>
+</li>
+</ol>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>根据CC BY-NC-SA 4.0协议授权</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 2025-09-13 02:48
+        </span>
+    </section></footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/hugo-dev/p/hugo-%E6%A1%86%E6%9E%B6%E4%B8%8B%E7%9A%84-markdown-%E8%AF%AD%E6%B3%95/">
+        
+        
+            <div class="article-image">
+                <img src="/hugo-dev/p/hugo-%E6%A1%86%E6%9E%B6%E4%B8%8B%E7%9A%84-markdown-%E8%AF%AD%E6%B3%95/pawel-czerwinski-8uZPynIu-rQ-unsplash.c514d916917173a48a42e0114b469961_hu_12cb662251854034.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Hugo 框架下的 Markdown 语法"
+                        
+                        data-hash="md5-xRTZFpFxc6SKQuARS0aZYQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugo 框架下的 Markdown 语法</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="BucketSran/hugo-messageBoard"
+    data-repo-id="R_kgDOPuB4bQ"
+    data-category="General"
+    data-category-id="DIC_kwDOPuB4bc4CvTuK"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 BucketSran knock your head
+    </section>
+    
+    <section class="powerby">
+        
+            You can add my QQ If you want to know more about me:1394021634 <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/hugo-dev/ts/main.99ce1801c4bad426a42fc436add4721e149159dbb598636e9578fd59cf778c83.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<div id="aplayer"></div>
+
+<script>
+	const musicDir = "https://BucketSran.github.io/hugo-dev/";
+	const songs = [
+		'方大同 - 天气先生',
+		'许嵩 - 星座书上',
+		'曾沛慈 - 一个人想着一个人',
+        '张震岳 - 思念是一种病',
+        '古巨基 - 爱与诚',
+	];
+	let audios = [];
+	songs.forEach((item) => {
+		const songInfo = item.split(' - ');
+		audios.push({
+			name: songInfo[1],
+			artist: songInfo[0],
+			url: musicDir + 'music/' + item + '/song.mp3',
+			cover: musicDir + 'music/' + item + '/cover.jpg',
+			lrc: musicDir + 'music/' + item + '/lyric.lrc'
+		});
+	});
+	const ap = new APlayer({
+   		container: document.getElementById('aplayer'),
+		 fixed: true,
+		 listMaxHeight: '90px',  
+		 lrcType: 3,
+   		 audio: audios
+	});
+
+
+    
+
+    window.onbeforeunload = () => {
+        
+        const playInfo = {
+            index: ap.list.index,
+            currentTime: ap.audio.currentTime,
+            paused: ap.paused
+        };
+        localStorage.setItem("playInfo", JSON.stringify(playInfo));
+    };
+
+    
+
+    window.onload = () => {
+        
+        const playInfo = JSON.parse(localStorage.getItem("playInfo"));
+        if (!playInfo) {
+            return;
+        }
+        
+        ap.list.switch(playInfo.index);
+        
+        setTimeout(() => {
+            
+            ap.seek(playInfo.currentTime);
+            
+            if (!playInfo.paused) {
+                ap.play()
+            }
+        }, 500);
+    };
+</script>
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
+
+
+    
+    <script src=https://BucketSran.github.io/hugo-dev/js/topbar.min.js></script>
+
+
+
+<script>
+
+    var pjax = new Pjax({
+      selectors: [".main-container"]
+    })
+    
+
+    pjax._handleResponse = pjax.handleResponse;
+
+    pjax.handleResponse = function(responseText, request, href, options) {
+    if (request.responseText.match("<html")) {
+        
+        let newDom = new DOMParser().parseFromString(responseText, 'text/html');
+        
+        let bodyClass = newDom.body.className;
+        document.body.setAttribute("class", bodyClass)
+        
+        setTimeout(() => {
+             pjax._handleResponse(responseText, request, href, options);
+        }, 600);
+       
+    } else {
+        
+    }
+    }
+    
+    
+    topbar.config({
+        barColors: {
+            '0': 'rgba(255,  255, 255, 1)', 
+            '1.0': 'rgba(0, 149, 234,  1)' 
+        }
+    })
+
+    document.addEventListener('pjax:send',() => {
+       
+       topbar.show();
+    })
+
+    document.addEventListener('pjax:complete',() => {
+       
+       window.Stack.init();
+       
+       topbar.hide();
+    })
+
+</script>
+
+
+
+
+
+ 
+	
+
+
+
+
+<script>
+    
+    const live2d_path = 'https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.6/dist/';
+    
+    const cssPath = "https://BucketSran.github.io/hugo-dev/waifu/waifu.css";
+    
+    const waifuTipsJsonPath = "https://BucketSran.github.io/hugo-dev/waifu/waifu-tips.json";
+    
+    const live2dMinJsPath = "https://BucketSran.github.io/hugo-dev/waifu/live2d.min.js";
+
+    
+
+    function loadExternalResource(url, type) {
+        return new Promise((resolve, reject) => {
+            let tag;
+            if (type === 'css') {
+                tag = document.createElement('link');
+                tag.rel = 'stylesheet';
+                tag.href = url;
+            } else if (type === 'js') {
+                tag = document.createElement('script');
+                tag.type = 'module';
+                tag.src = url;
+            }
+            if (tag) {
+                tag.onload = () => resolve(url);
+                tag.onerror = () => reject(url);
+                document.head.appendChild(tag);
+            }
+        });
+    }
+
+    
+
+    function initWaifuMouseEvent() {
+        const waifu = document.getElementById("waifu");
+        if (!waifu) return;
+        let isDown = false, waifuLeft = 0, mouseLeft = 0, waifuTop = 0, mouseTop = 0;
+        waifu.onmousedown = function (e) {
+            isDown = true;
+            waifuLeft = waifu.offsetLeft;
+            mouseLeft = e.clientX;
+            waifuTop = waifu.offsetTop;
+            mouseTop = e.clientY;
+        }
+        window.onmousemove = function (e) {
+            if (!isDown) return;
+            let currentLeft = waifuLeft + (e.clientX - mouseLeft);
+            if (currentLeft < 0) {
+                currentLeft = 0;
+            } else if (currentLeft > window.innerWidth - 300) {
+                currentLeft = window.innerWidth - 300;
+            }
+            waifu.style.left = currentLeft + "px";
+            let currentTop = waifuTop + (e.clientY - mouseTop);
+            if (currentTop < 0) {
+                currentTop = 0;
+            } else if (currentTop > window.innerHeight - 290) {
+                currentTop = window.innerHeight - 290;
+            }
+            waifu.style.top = currentTop + "px";
+        }
+        window.onmouseup = function (e) {
+            isDown = false;
+        }
+    }
+
+    
+    if (screen.width >= 768) {
+        (async () => {
+            const OriginalImage = window.Image;
+            window.Image = function(...args) {
+                const img = new OriginalImage(...args);
+                img.crossOrigin = "anonymous";
+                return img;
+            };
+            window.Image.prototype = OriginalImage.prototype;
+            await Promise.all([
+                loadExternalResource(cssPath, 'css'),
+                loadExternalResource(live2dMinJsPath, 'js'),
+                loadExternalResource(live2d_path + 'waifu-tips.js', 'js')
+            ]);
+            initWidget({
+                waifuPath: waifuTipsJsonPath,
+                cdnPath: 'https://cdn.jsdelivr.net/gh/BucketSran/static-resource@v1.0.0',
+                cubism2Path: live2d_path + 'live2d.min.js',
+                tools: ['hitokoto', 'asteroids', 'switch-model', 'switch-texture', 'photo', 'info', 'quit'],
+                logLevel: 'warn',
+                drag: false,
+            });
+            initWaifuMouseEvent();
+        })();
+    }
+</script>
+
+<script src="https://BucketSran.github.io/hugo-dev/background/sakura.js"></script>
+<script defer src="https://cn.vercount.one/js"></script>
+
+
+<style>
+     
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://BucketSran.github.io/hugo-dev/icons/backTop.svg);
+    }
+
+     
+    .highlight {
+         
+        max-height: 400px;
+        overflow: hidden;
+         
+        position: relative;
+    }
+    .code-show {
+         
+        max-height: none !important;
+    }
+    .code-more-box {
+        width: 100%;
+        padding-top: 78px;
+         
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), white);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+     
+    [data-scheme="dark"] .code-more-box {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(28, 28, 30, 0)), to(#1c1c1e));
+        background-image: linear-gradient(180deg, rgba(28, 28, 30, 0), #1c1c1e);
+    }
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #f0f0f5;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+     
+    [data-scheme="dark"] .code-more-btn {
+        background: #3a3a3c;
+    }
+    .code-more-img {
+        cursor: pointer !important;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+    }
+</style>
+
+
+<script>
+    
+
+    function initScrollTop() {
+        const rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) return;
+        if (document.getElementById("backTopBtn")) return; 
+        const btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+        rightSideBar.appendChild(btn);
+        if (typeof window.onBackTopScroll !== 'function') {
+            window.onBackTopScroll = function() {
+                const backTopBtn = document.getElementById("backTopBtn");
+                if (backTopBtn) {
+                    const shouldBeVisible = document.body.scrollTop > 20 || document.documentElement.scrollTop > 20;
+                    backTopBtn.style.display = shouldBeVisible ? "block" : "none";
+                }
+            };
+            window.addEventListener('scroll', window.onBackTopScroll);
+        }
+    }
+
+    
+
+    function initCodeMoreBox() {
+        const codeBlocks = document.querySelectorAll(".highlight");
+        if (!codeBlocks.length) return;
+        codeBlocks.forEach(codeBlock => {
+            if (codeBlock.querySelector('.code-more-box')) return; 
+            if (codeBlock.scrollHeight <= codeBlock.clientHeight) return;
+            const codeMoreBox = document.createElement('div');
+            codeMoreBox.className = 'code-more-box';
+            const codeMoreBtn = document.createElement('span');
+            codeMoreBtn.className = 'code-more-btn';
+            codeMoreBtn.addEventListener('click', () => {
+                codeBlock.classList.add('code-show');
+                codeMoreBox.style.display = 'none';
+                window.dispatchEvent(new Event('resize'));
+            });
+            const img = document.createElement('img');
+            img.className = 'code-more-img';
+            try {
+                img.src = 'https:\/\/BucketSran.github.io\/hugo-dev\/icons\/codeMore.png';
+                img.alt = 'Expand code';
+                codeMoreBtn.appendChild(img);
+                codeMoreBox.appendChild(codeMoreBtn);
+                codeBlock.appendChild(codeMoreBox);
+            } catch (e) {
+                console.error("加载 codeMore.png 图标失败，请检查文件是否存在于 /assets/icons/ 目录下。", e);
+            }
+        });
+    }
+
+    
+
+    function runPjaxCompatibleScripts() {
+        initScrollTop();
+        initCodeMoreBox();
+        
+    }
+
+    
+    document.addEventListener('DOMContentLoaded', runPjaxCompatibleScripts);
+    document.addEventListener('pjax:complete', runPjaxCompatibleScripts);
+</script>
+
+
+    </body>
+</html>
