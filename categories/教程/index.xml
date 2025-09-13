@@ -1030,6 +1030,15 @@ $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$&lt;/li&gt;
 &lt;p&gt;在&lt;code&gt;dev\layouts\partials\footer&lt;/code&gt;目录下修改 &lt;strong&gt;aplayer.html&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;h3 id=&#34;43-有关pjax下评论区不显示的问题&#34;&gt;4.3 有关Pjax下评论区不显示的问题
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在&lt;code&gt;dev/layouts/partials/comments/provider/&lt;/code&gt;下新建 &lt;strong&gt;giscus.html&lt;/strong&gt;文件，只添加&lt;code&gt;&amp;lt;div id=&amp;quot;giscus-container&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;代码，这段代码将&lt;strong&gt;提供一个信号&lt;/strong&gt;（告诉 JS 该加载了）和&lt;strong&gt;一个舞台&lt;/strong&gt;（告诉 JS 在哪里加载）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;更新自定义脚本，将把 Giscus 的初始化逻辑整合到现有的 &lt;code&gt;custom.html&lt;/code&gt; 脚本中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         </item>
         

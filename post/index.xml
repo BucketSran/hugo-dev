@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>BucketSran knock your head</copyright>
-        <lastBuildDate>Sat, 13 Sep 2025 17:53:52 +0800</lastBuildDate><atom:link href="https://BucketSran.github.io/hugo-dev/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 13 Sep 2025 21:26:52 +0800</lastBuildDate><atom:link href="https://BucketSran.github.io/hugo-dev/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hugo 框架下的 Markdown 语法</title>
         <link>https://BucketSran.github.io/hugo-dev/p/hugo-%E6%A1%86%E6%9E%B6%E4%B8%8B%E7%9A%84-markdown-%E8%AF%AD%E6%B3%95/</link>
         <pubDate>Mon, 08 Sep 2025 20:32:25 +0800</pubDate>
@@ -1054,6 +1054,15 @@ $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$&lt;/li&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;在&lt;code&gt;dev\layouts\partials\footer&lt;/code&gt;目录下修改 &lt;strong&gt;aplayer.html&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;43-有关pjax下评论区不显示的问题&#34;&gt;4.3 有关Pjax下评论区不显示的问题
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在&lt;code&gt;dev/layouts/partials/comments/provider/&lt;/code&gt;下新建 &lt;strong&gt;giscus.html&lt;/strong&gt;文件，只添加&lt;code&gt;&amp;lt;div id=&amp;quot;giscus-container&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;代码，这段代码将&lt;strong&gt;提供一个信号&lt;/strong&gt;（告诉 JS 该加载了）和&lt;strong&gt;一个舞台&lt;/strong&gt;（告诉 JS 在哪里加载）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;更新自定义脚本，将把 Giscus 的初始化逻辑整合到现有的 &lt;code&gt;custom.html&lt;/code&gt; 脚本中。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 </description>
