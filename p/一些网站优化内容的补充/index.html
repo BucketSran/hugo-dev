@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/'>
 
-<link rel="stylesheet" href="/hugo-dev/scss/style.min.8f5ba77b2a3695d1a4410f813c39d1355e62f34734542b19eb52063261d58d3c.css"><meta property='og:title' content="一些网站优化内容的补充">
+<link rel="stylesheet" href="/hugo-dev/scss/style.min.d4d3642fb53643397bc6c59e4dffa302020942017e08347265e7e6a4a89f24b7.css"><meta property='og:title' content="一些网站优化内容的补充">
 <meta property='og:description' content="另开一个博客做补充吧">
 <meta property='og:url' content='https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/'>
 <meta property='og:site_name' content='BucketSran'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-09-08T20:32:25&#43;08:00'/><meta property='article:modified_time' content='2025-09-15T17:50:14&#43;08:00'/><meta property='og:image' content='https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/haizei.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-09-15T14:32:25&#43;08:00'/><meta property='article:modified_time' content='2025-09-15T19:45:46&#43;08:00'/><meta property='og:image' content='https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/haizei.jpg' />
 <meta name="twitter:title" content="一些网站优化内容的补充">
 <meta name="twitter:description" content="另开一个博客做补充吧"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/haizei.jpg' />
@@ -447,9 +447,16 @@
         <li><a href="#13-改变站点统计信息的字体和位置">1.3 改变站点统计信息的字体和位置</a></li>
       </ul>
     </li>
-    <li><a href="#2-添加访客地图未">2 添加访客地图(未)</a>
+    <li><a href="#2-添加访客地图">2 添加访客地图</a>
       <ul>
         <li><a href="#21-操作步骤">2.1 操作步骤</a></li>
+        <li><a href="#22-美化步骤">2.2 美化步骤</a>
+          <ul>
+            <li><a href="#第一步创建独立的访客地图小部件文件">第一步：创建独立的“访客地图”小部件文件</a></li>
+            <li><a href="#第二步在-hugoyaml-中启用这个小部件">第二步：在 <code>hugo.yaml</code> 中启用这个小部件</a></li>
+            <li><a href="#第三步添加-css-样式来调整大小和美化">第三步：添加 CSS 样式来调整大小和美化</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
     <li><a href="#3-首页欢迎横幅">3 首页欢迎横幅</a></li>
@@ -525,7 +532,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2025-09-08</time>
+                <time class="article-time--published">2025-09-15</time>
             </div>
         
 
@@ -540,7 +547,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 5 分钟
+                    阅读时长: 7 分钟
                 </time>
             </div>
         
@@ -637,7 +644,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Add blog running time --&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">s1</span> <span class="o">=</span> <span class="s1">&#39;2025-9-12&#39;</span><span class="p">;</span> <span class="c1">//website start date
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">s1</span> <span class="o">=</span> <span class="s1">&#39;2025-09-08&#39;</span><span class="p">;</span> <span class="c1">//website start date
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">s1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">s1</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/-/g</span><span class="p">,</span> <span class="s2">&#34;/&#34;</span><span class="p">));</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">s2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">timeDifference</span> <span class="o">=</span> <span class="nx">s2</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span> <span class="o">-</span> <span class="nx">s1</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
@@ -862,7 +869,7 @@
 </div>
 </div></li>
 </ul>
-<h2 id="2-添加访客地图未">2 添加访客地图(未)
+<h2 id="2-添加访客地图">2 添加访客地图
 </h2><blockquote class="alert alert-tip">
     <p>访客地图是一个<strong>可视化的小工具</strong>，它会在你的网站侧边栏显示一个<strong>动态的3D地球</strong>。每当有来自世界不同地方的访客访问你的网站时，地球上对应的位置就会出现一个小红点，直观地展示出你的访客遍布全球的情况。</p></blockquote>
 <h3 id="21-操作步骤">2.1 操作步骤
@@ -923,14 +930,177 @@
 </span></span><span class="line"><span class="cl">                {{ warnf &#34;Widget %s not found&#34; .type }}
 </span></span><span class="line"><span class="cl">            {{ end }}
 </span></span><span class="line"><span class="cl">        {{ end }}
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;height: 30%;width: 30%&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;clstr_globe&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;//clustrmaps.com/globe.js?d=xxxxx&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;clustrmaps&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;//clustrmaps.com/map_v2.js?d=d1c96dU-PfrJQtQnsIAKQNYGznK5UReBiFVTH3l53Cc&amp;cl=ffffff&amp;w=a&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">aside</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">{{ end }}
 </span></span></code></pre></td></tr></table>
 </div>
 </div></li>
+</ul>
+<h3 id="22-美化步骤">2.2 美化步骤
+</h3><blockquote class="alert alert-tip">
+    <p>接下来我们希望能为这个地图添加一个说明，能让别人知道这是<strong>访客地图</strong></p>
+<p>此外，我们还需要调整他的大小，现在稍微有点大了</p></blockquote>
+<h4 id="第一步创建独立的访客地图小部件文件">第一步：创建独立的“访客地图”小部件文件
+</h4><p>这种方法能让你的代码更整洁，并且在未来升级主题时更安全。</p>
+<ol>
+<li>
+<p>在 Hugo 项目根目录下，创建这个新文件（如果 <code>widget</code> 文件夹不存在，请手动创建）： <code>layouts/partials/widget/visitor-map.html</code></p>
+</li>
+<li>
+<p>将下面这段<strong>包含说明文字的、结构优化</strong>的代码，完整地粘贴到这个新建的 <code>visitor-map.html</code> 文件中。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;widget widget-visitor-map&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;widget-title&#34;</span><span class="p">&gt;</span>访客地图<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;widget-description&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;font-size: 0.85rem; color: var(--card-text-color-secondary); text-align: center; margin-bottom: 1rem;&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        地图上的亮点代表近期访问本站的朋友们的位置 ✨
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;widget-body&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;clustrmaps&#34;</span> 
+</span></span><span class="line"><span class="cl">                <span class="na">src</span><span class="o">=</span><span class="s">&#34;//clustrmaps.com/map_v2.js?d=【在这里粘贴你的专属ID】&amp;cl=ffffff&amp;w=a&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><strong>改动说明</strong>：我将您的地图脚本用主题标准的 <code>&lt;section class=&quot;widget&quot;&gt;</code> 结构包裹起来，并添加了 <code>&lt;h3&gt;</code> 标题和 <code>&lt;p&gt;</code> 说明文字，让它看起来和其他小部件（如搜索、归档）风格完全一致。</li>
+</ul>
+</li>
+</ol>
+<h4 id="第二步在-hugoyaml-中启用这个小部件">第二步：在 <code>hugo.yaml</code> 中启用这个小部件
+</h4><p>现在，我们需要告诉主题在侧边栏显示我们刚刚创建的这个小部件。</p>
+<ol>
+<li>
+<p>打开您项目根目录下的 <code>hugo.yaml</code> 文件。</p>
+</li>
+<li>
+<p>找到 <code>params.widgets.page</code> 或 <code>params.widgets.homepage</code> 部分（取决于您想让它显示在文章页还是主页的侧边栏）。</p>
+</li>
+<li>
+<p>在列表中添加以下代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">widgets</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">homepage</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># ...其他小部件...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">visitor-map </span><span class="w"> </span><span class="c"># &lt;-- 将 type 直接命名为 visitor-map</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># params: {}      &lt;-- params 现在是可选的，可以留空或删除</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h4 id="第三步添加-css-样式来调整大小和美化">第三步：添加 CSS 样式来调整大小和美化
+</h4><p>这是解决“尺寸太大”问题的关键。</p>
+<ol>
+<li>
+<p>打开您的自定义样式文件：<code>assets/scss/custom.scss</code></p>
+</li>
+<li>
+<p>将下面这段 CSS 代码添加到文件末尾。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-SCSS" data-lang="SCSS"><span class="line"><span class="cl"><span class="c1">// 文件路径: assets/scss/custom.scss
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// ===================================
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 自定义访客地图小部件样式
+</span></span></span><span class="line"><span class="cl"><span class="c1">// ===================================
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nc">.widget-visitor-map</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nc">.widget-description</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="na">font-size</span><span class="o">:</span> <span class="mi">0</span><span class="mf">.85</span><span class="kt">rem</span><span class="p">;</span> <span class="c1">// 说明文字的字号
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="na">color</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">card-text-color-secondary</span><span class="p">);</span> <span class="c1">// 使用主题的次要文字颜色
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="na">text-align</span><span class="o">:</span> <span class="ni">center</span><span class="p">;</span> <span class="c1">// 文字居中
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="na">margin-bottom</span><span class="o">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span> <span class="c1">// 和下方的地图保持一点距离
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   <span class="nc">.widget-body</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="na">text-align</span><span class="o">:</span> <span class="ni">center</span><span class="p">;</span> <span class="c1">// 让地图在容器内居中
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   <span class="c1">// 针对 ClustrMaps 生成的地图 iframe 进行样式调整
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="c1">// 这是调整地图大小的关键
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="nn">#clustrmaps-map-v2</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="c1">// 设置一个最大宽度，避免在宽屏上撑满整个侧边栏
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="na">max-width</span><span class="o">:</span> <span class="mi">260</span><span class="kt">px</span> <span class="k">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">       <span class="na">width</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span> <span class="k">!important</span><span class="p">;</span> <span class="c1">// 宽度自适应
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">       <span class="c1">// 样式美化，让它和主题更搭
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="na">border</span><span class="o">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="ni">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">card-border-color</span><span class="p">)</span> <span class="k">!important</span><span class="p">;</span> <span class="c1">// 添加边框
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="na">border-radius</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">card-border-radius</span><span class="p">)</span> <span class="k">!important</span><span class="p">;</span>   <span class="c1">// 使用主题的圆角
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="na">box-shadow</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">shadow-l1</span><span class="p">);</span> <span class="c1">// 添加一点阴影
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<p><strong>代码解释</strong>:</p>
+<ul>
+<li>
+<p><strong><code>.widget-description</code></strong>: 为您新增的说明文字设置了居中、小字号和灰色字体，使其看起来更和谐。</p>
+</li>
+<li>
+<p><strong><code>#clustrmaps-map-v2</code></strong>: 这是 ClustrMaps 脚本生成的地图的 <code>id</code>。我们通过这个选择器精确地控制它的大小和外观。</p>
+</li>
+<li>
+<p><strong><code>max-width: 260px !important;</code></strong>: <strong>这是调整大小的核心</strong>。它限制了地图的最大宽度为 260 像素，解决了“尺寸太大”的问题。<code>!important</code> 在这里是必要的，用来覆盖 ClustrMaps 脚本可能自带的内联样式。</p>
+</li>
+<li>
+<p><strong><code>border</code> 和 <code>border-radius</code></strong>: 为地图添加了和主题卡片风格一致的边框和圆角，让它完美融入您的网站设计。</p>
+</li>
 </ul>
 <h2 id="3-首页欢迎横幅">3 首页欢迎横幅
 </h2><ol>
@@ -1237,13 +1407,13 @@
 <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{- $ThemeVersion := &#34;3.29.0&#34; -}}
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">footer</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;site-footer&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;copyright&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="ni">&amp;copy;</span> 
+</span></span><span class="line"><span class="cl">        © 
 </span></span><span class="line"><span class="cl">        {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format &#34;2006&#34;))) }}
 </span></span><span class="line"><span class="cl">            {{ .Site.Params.footer.since }} - 
 </span></span><span class="line"><span class="cl">        {{ end }}
 </span></span><span class="line"><span class="cl">        {{ now.Format &#34;2006&#34; }} {{ default .Site.Title .Site.Copyright }}
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="c">&lt;!------------- 以下的删除掉 -------------&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;powerby&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">        {{ with .Site.Params.footer.customText }}
@@ -1298,7 +1468,7 @@
 
 
         <span>
-            最后更新于 2025-09-15 17:50
+            最后更新于 2025-09-15 19:45
         </span>
     </section></footer>
 
@@ -1859,7 +2029,7 @@
             
         
 
-        <span>共发表 4 篇文章 · 总计 9.2k 字</span>
+        <span>共发表 4 篇文章 · 总计 10.3k 字</span>
     </div>
 
     
@@ -1869,7 +2039,7 @@
 <script>
     function updateRunningTime() {
         
-        let siteStartDate = '2025-09-13'; 
+        let siteStartDate = '2025-09-08'; 
         
         let startDate = new Date(siteStartDate.replace(/-/g, "/"));
         let currentDate = new Date();
