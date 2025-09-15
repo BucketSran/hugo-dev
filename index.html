@@ -7,11 +7,11 @@
 
 <link rel='canonical' href='https://BucketSran.github.io/hugo-dev/'>
 
-<link rel="stylesheet" href="/hugo-dev/scss/style.min.62b5ff495aa1e3a86cf06991b130b9e65e93b462eccfc1fa74600bca8e2e68b3.css"><meta property='og:title' content="BucketSran">
+<link rel="stylesheet" href="/hugo-dev/scss/style.min.8f5ba77b2a3695d1a4410f813c39d1355e62f34734542b19eb52063261d58d3c.css"><meta property='og:title' content="BucketSran">
 <meta property='og:description' content="欲买桂花同载酒，终不似，少年游">
 <meta property='og:url' content='https://BucketSran.github.io/hugo-dev/'>
 <meta property='og:site_name' content='BucketSran'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-09-13T21:26:52&#43;08:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-09-15T17:50:14&#43;08:00 '/>
 <meta name="twitter:title" content="BucketSran">
 <meta name="twitter:description" content="欲买桂花同载酒，终不似，少年游"><link rel="alternate" type="application/rss&#43;xml" href="https://BucketSran.github.io/hugo-dev/index.xml">
     <link rel="shortcut icon" href="/hugo-dev/favicon.ico" />
@@ -461,7 +461,7 @@
                     <a href="/hugo-dev/archives/#2025">
                         
                             <span class="year">2025</span>
-                            <span class="count">3</span>
+                            <span class="count">4</span>
                         
                     </a> 
                 </div>
@@ -470,13 +470,31 @@
     </section>
             
         
+        <div>
+            <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=d1c96dU-PfrJQtQnsIAKQNYGznK5UReBiFVTH3l53Cc&cl=ffffff&w=a"></script>
+        </div>
     </aside>
+
+
+
 
 
             <main class="main full-width">
     
     
     
+    
+
+    
+    <div class="welcome">
+    <p style="font-size: 2rem; text-align: center; font-weight: bold">
+        <span class="shake">👋</span>
+        <span class="jump-text1" > Welcome</span>
+        <span class="jump-text2"> To </span>
+        <span class="jump-text3" style="color:#124be9">Buc</span><span class="jump-text4" style="color:#124be9">k</span><span class="jump-text5" style="color:#124be9">e</span><span class="jump-text6" style="color:#124be9">t</span><span class="jump-text7" style="color:#124be9">Sran</span><span class="jump-text8" style="color:#124be9">'s</span>
+        <span class="jump-text9" style="color:#124be9">Blog</span>
+    </p>
+    </div>
     
 
     <section class="article-list">
@@ -731,6 +749,21 @@
 </article>
         
     </section>
+    <nav class='pagination'>
+        
+        
+
+        
+            
+                <span class='page-link current'>1</span>
+                
+            
+            
+                    <a class='page-link' href='/hugo-dev/page/2/'>2</a>
+                
+            
+    </nav>
+
 <footer class="site-footer">
     <section class="copyright">
         &copy; 
@@ -1082,6 +1115,81 @@
     document.addEventListener('DOMContentLoaded', runPjaxCompatibleScripts);
     document.addEventListener('pjax:complete', runPjaxCompatibleScripts);
 </script>
+
+
+
+
+
+<section class="site-stats-footer">
+    <div class="runtime">
+        <span>本博客已稳定运行</span>
+        <span id="run-days" class="running-days"></span>
+        <span>天</span>
+        <span id="run-hours" class="running-days"></span>
+        <span>小时</span>
+        <span id="run-minutes" class="running-days"></span>
+        <span>分钟</span>
+    </div>
+
+    <div class="article-count">
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        <span>共发表 4 篇文章 · 总计 9.2k 字</span>
+    </div>
+
+    
+
+</section>
+
+<script>
+    function updateRunningTime() {
+        
+        let siteStartDate = '2025-09-13'; 
+        
+        let startDate = new Date(siteStartDate.replace(/-/g, "/"));
+        let currentDate = new Date();
+        let timeDifference = currentDate.getTime() - startDate.getTime();
+        
+        let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        
+        if(document.getElementById('run-days')) document.getElementById('run-days').innerHTML = days;
+        if(document.getElementById('run-hours')) document.getElementById('run-hours').innerHTML = hours;
+        if(document.getElementById('run-minutes')) document.getElementById('run-minutes').innerHTML = minutes;
+    }
+    
+    updateRunningTime();
+    
+    setInterval(updateRunningTime, 60000);
+</script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<style>
+    .site-stats-footer {
+         
+        text-align: center;  
+        margin-top: 2rem;    
+        padding-top: 2rem;   
+        border-top: 1px solid var(--card-border-color);  
+
+         
+        font-size: 1.0rem;  
+        color: var(--card-text-color-secondary);  
+        line-height: 1.8;  
+    }
+</style>
 
     </body>
 </html>

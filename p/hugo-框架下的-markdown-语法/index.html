@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://BucketSran.github.io/hugo-dev/p/hugo-%E6%A1%86%E6%9E%B6%E4%B8%8B%E7%9A%84-markdown-%E8%AF%AD%E6%B3%95/'>
 
-<link rel="stylesheet" href="/hugo-dev/scss/style.min.62b5ff495aa1e3a86cf06991b130b9e65e93b462eccfc1fa74600bca8e2e68b3.css"><meta property='og:title' content="Hugo 框架下的 Markdown 语法">
+<link rel="stylesheet" href="/hugo-dev/scss/style.min.8f5ba77b2a3695d1a4410f813c39d1355e62f34734542b19eb52063261d58d3c.css"><meta property='og:title' content="Hugo 框架下的 Markdown 语法">
 <meta property='og:description' content="这是一篇示例文章，用于展示适用于 HTML 的基本 Markdown 语法和格式">
 <meta property='og:url' content='https://BucketSran.github.io/hugo-dev/p/hugo-%E6%A1%86%E6%9E%B6%E4%B8%8B%E7%9A%84-markdown-%E8%AF%AD%E6%B3%95/'>
 <meta property='og:site_name' content='BucketSran'>
@@ -512,7 +512,13 @@
 
             
         
+        <div>
+            <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=d1c96dU-PfrJQtQnsIAKQNYGznK5UReBiFVTH3l53Cc&cl=ffffff&w=a"></script>
+        </div>
     </aside>
+
+
+
 
 
             <main class="main full-width">
@@ -1140,6 +1146,30 @@ $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$</li>
             
                 
 <article class="has-image">
+    <a href="/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/">
+        
+        
+            <div class="article-image">
+                <img src="/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/haizei.491a246b8e94a1f874dfcf8d4f1d5ca2_hu_37022b5c7be5eca0.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 一些网站优化内容的补充"
+                        
+                        data-hash="md5-SRoka46Uofh038&#43;NTx1cog==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">一些网站优化内容的补充</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
     <a href="/hugo-dev/p/%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88%E8%87%AA%E7%94%A8/">
         
         
@@ -1603,6 +1633,81 @@ $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$</li>
     document.addEventListener('DOMContentLoaded', runPjaxCompatibleScripts);
     document.addEventListener('pjax:complete', runPjaxCompatibleScripts);
 </script>
+
+
+
+
+
+<section class="site-stats-footer">
+    <div class="runtime">
+        <span>本博客已稳定运行</span>
+        <span id="run-days" class="running-days"></span>
+        <span>天</span>
+        <span id="run-hours" class="running-days"></span>
+        <span>小时</span>
+        <span id="run-minutes" class="running-days"></span>
+        <span>分钟</span>
+    </div>
+
+    <div class="article-count">
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        <span>共发表 4 篇文章 · 总计 9.2k 字</span>
+    </div>
+
+    
+
+</section>
+
+<script>
+    function updateRunningTime() {
+        
+        let siteStartDate = '2025-09-13'; 
+        
+        let startDate = new Date(siteStartDate.replace(/-/g, "/"));
+        let currentDate = new Date();
+        let timeDifference = currentDate.getTime() - startDate.getTime();
+        
+        let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        
+        if(document.getElementById('run-days')) document.getElementById('run-days').innerHTML = days;
+        if(document.getElementById('run-hours')) document.getElementById('run-hours').innerHTML = hours;
+        if(document.getElementById('run-minutes')) document.getElementById('run-minutes').innerHTML = minutes;
+    }
+    
+    updateRunningTime();
+    
+    setInterval(updateRunningTime, 60000);
+</script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<style>
+    .site-stats-footer {
+         
+        text-align: center;  
+        margin-top: 2rem;    
+        padding-top: 2rem;   
+        border-top: 1px solid var(--card-border-color);  
+
+         
+        font-size: 1.0rem;  
+        color: var(--card-text-color-secondary);  
+        line-height: 1.8;  
+    }
+</style>
 
     </body>
 </html>

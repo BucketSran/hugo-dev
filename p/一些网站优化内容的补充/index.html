@@ -1,0 +1,1910 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="另开一个博客做补充吧">
+<title>一些网站优化内容的补充</title>
+
+<link rel='canonical' href='https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/'>
+
+<link rel="stylesheet" href="/hugo-dev/scss/style.min.8f5ba77b2a3695d1a4410f813c39d1355e62f34734542b19eb52063261d58d3c.css"><meta property='og:title' content="一些网站优化内容的补充">
+<meta property='og:description' content="另开一个博客做补充吧">
+<meta property='og:url' content='https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/'>
+<meta property='og:site_name' content='BucketSran'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-09-08T20:32:25&#43;08:00'/><meta property='article:modified_time' content='2025-09-15T17:50:14&#43;08:00'/><meta property='og:image' content='https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/haizei.jpg' />
+<meta name="twitter:title" content="一些网站优化内容的补充">
+<meta name="twitter:description" content="另开一个博客做补充吧"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/haizei.jpg' />
+    <link rel="shortcut icon" href="/hugo-dev/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<div class="loading">
+    <div class="sharingon">
+        <div class="ring">
+            <div class="to"></div>
+            <div class="to"></div>
+            <div class="to"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .loading {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        zoom: 3.0;
+        background-color: #f5f5fa;
+    }
+	
+    .animated-stop {
+        animation-play-state: paused !important;
+    }
+	
+    .scaleAndFadeout {
+        animation: scaleAndFadeOut 1.5s forwards;
+    }
+	
+     
+    @keyframes scaleAndFadeOut {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+    }
+
+     
+    .sharingon {
+        position: relative;
+        width: 6em;
+        height: 6em;
+        background-color: red;
+        border: 6px solid black;
+        animation: rot 1s ease-in-out infinite;
+    }
+
+    .ring {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 50%;
+        width: 3.5em;
+        height: 3.5em;
+        border: 4px solid rgb(110, 13 ,13 ,0.5);
+        transform: translate(-50%,-50%);
+    }
+
+    .sharingon, .ring, .to,.circle {
+        border-radius: 50%;
+    }
+
+    .to,.circle {
+        position: absolute;
+        content: "";
+        width: 0.9em;
+        height: 0.9em;
+        background-color: black;
+    }
+
+    .to:nth-child(1) {
+        top: -0.5em;
+        left: 50%;
+        transform: translate(-40%);
+    }
+
+    .to::before {
+        content: "";
+        position: absolute;
+        top: -0.5em;
+        right: -0.2em;
+        width: 1.1em;
+        height: 0.9em;
+        box-sizing: border-box;
+        border-left: 16px solid black;
+        border-radius: 100% 0 0;
+    }
+
+    .to:nth-child(2) {
+        bottom: 0.5em;
+        left: -0.35em;
+        transform: rotate(-120deg);
+    }
+
+    .to:nth-child(3) {
+        bottom: 0.5em;
+        right: -0.35em;
+        transform: rotate(120deg);
+    }
+
+    .circle {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 0 0 20px 1px;
+        width: 1em;
+        height: 1em;
+    }
+
+    @keyframes rot {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<script>	
+    function initLoading() {
+        let loading = document.querySelector(".loading");
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            
+            loadFinish();
+            
+            setTimeout(() => {
+                loading.style.display = "none";
+            }, 1500)
+        });
+    }
+	
+    function loadFinish() {
+        
+        let sharingon= document.querySelector(".sharingon");
+        sharingon.classList.add("animated-stop")
+        
+        let loading = document.querySelector(".loading");
+        loading.classList.add("scaleAndFadeout")
+    }
+	
+    initLoading();
+</script>
+
+
+
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/hugo-dev/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/hugo-dev/img/fulinna_hu_a452475fda03c2c7.gif" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😍</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/hugo-dev">BucketSran</a></h1>
+            <h2 class="site-description">欲买桂花同载酒，终不似，少年游</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://space.bilibili.com/431091272'
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bilibili"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" /><path d="M8 3l2 3" /><path d="M16 3l-2 3" /><path d="M9 13v-2" /><path d="M15 11v2" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/BucketSran/hugo-dev'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://v.douyin.com/Q9dx9hUGIao/'
+                        target="_blank"
+                        title="TikTok"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/hugo-dev/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>博客 | Blog</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/hugo-dev/%E7%AE%80%E4%BB%8B-introduction/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>简介 |  Introduction</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/hugo-dev/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档 | Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/hugo-dev/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索 | Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/hugo-dev/%E9%93%BE%E6%8E%A5-links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接 | Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-添加站点统计信息与-i18n">1 添加站点统计信息与 i18n</a>
+      <ul>
+        <li><a href="#11-展示格式">1.1 展示格式</a></li>
+        <li><a href="#12-修改方案">1.2 修改方案</a></li>
+        <li><a href="#13-改变站点统计信息的字体和位置">1.3 改变站点统计信息的字体和位置</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-添加访客地图未">2 添加访客地图(未)</a>
+      <ul>
+        <li><a href="#21-操作步骤">2.1 操作步骤</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-首页欢迎横幅">3 首页欢迎横幅</a></li>
+    <li><a href="#4-删除使用-hugo-构建-主题stack由jimmy设计等字样未验证">4 删除“使用 Hugo 构建 主题Stack由Jimmy设计”等字样(未验证)</a></li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+        <div>
+            <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=d1c96dU-PfrJQtQnsIAKQNYGznK5UReBiFVTH3l53Cc&cl=ffffff&w=a"></script>
+        </div>
+    </aside>
+
+
+
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/">
+                <img src="/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/haizei_hu_19090c940bdd44b3.jpg"
+                        srcset="/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/haizei_hu_19090c940bdd44b3.jpg 800w, /hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/haizei_hu_17243db7d426437a.jpg 1600w"
+                        width="800" 
+                        height="450" 
+                        loading="lazy"
+                        alt="Featured image of post 一些网站优化内容的补充" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/hugo-dev/categories/%E6%95%99%E7%A8%8B/" style="background-color: #2a9d8f; color: #fff;">
+                教程
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/">一些网站优化内容的补充</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            另开一个博客做补充吧
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-09-08</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 5 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="1-添加站点统计信息与-i18n">1 添加站点统计信息与 i18n
+</h2><h3 id="11-展示格式">1.1 展示格式
+</h3><ul>
+<li>
+<p>本博客已稳定运行 x 天 y 小时 z 分钟</p>
+</li>
+<li>
+<p>共发表 x 篇文章・总计 y k 字</p>
+</li>
+<li>
+<p>本站总访问量 x 次</p>
+</li>
+</ul>
+<h3 id="12-修改方案">1.2 修改方案
+</h3><ol>
+<li>在根目录<code>./layouts/partials/footer/custom.html</code> 文件内添加如下代码:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;count_info&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            {{ T &#34;footer.runtime1&#34; }}
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;ds&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;running-days&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            {{ T &#34;footer.runtime2&#34; }}
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;hs&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;running-days&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            {{ T &#34;footer.runtime3&#34; }}
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;ms&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;running-days&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            {{ T &#34;footer.runtime4&#34; }}
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            {{$scratch := newScratch}}
+</span></span><span class="line"><span class="cl">            {{ range (where .Site.Pages &#34;Kind&#34; &#34;page&#34; )}}
+</span></span><span class="line"><span class="cl">            {{$scratch.Add &#34;total&#34; .WordCount}}
+</span></span><span class="line"><span class="cl">            {{ end }}
+</span></span><span class="line"><span class="cl">            {{ T &#34;footer.count1&#34; }} {{ len (where .Site.RegularPages &#34;Section&#34; &#34;post&#34;) }} {{ T &#34;footer.count2&#34; }} {{ div ($scratch.Get &#34;total&#34;) 1000.0 | lang.FormatNumber 2 }} k {{ T &#34;footer.count3&#34; }}
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_container_site_pv&#34;</span><span class="p">&gt;</span>{{ T &#34;footer.pv1&#34; }}<span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_value_site_pv&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>{{ T &#34;footer.pv2&#34; }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Add blog running time --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">s1</span> <span class="o">=</span> <span class="s1">&#39;2025-9-12&#39;</span><span class="p">;</span> <span class="c1">//website start date
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">s1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">s1</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/-/g</span><span class="p">,</span> <span class="s2">&#34;/&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">s2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">timeDifference</span> <span class="o">=</span> <span class="nx">s2</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span> <span class="o">-</span> <span class="nx">s1</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">days</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">timeDifference</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">24</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">hours</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">timeDifference</span> <span class="o">%</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">24</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">minutes</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">timeDifference</span> <span class="o">%</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;ds&#39;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">days</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;hs&#39;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">hours</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;ms&#39;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">minutes</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>
+<p>新建<code>./dev/i18n/</code> 文件夹，复制 <code>themes/hugo-theme-stack/i18n/</code>中的 <code>zh-cn.yaml</code>文件到<code>./dev/i18n/</code> 文件夹中。</p>
+</li>
+<li>
+<p>在<code>zh-cn.yaml</code>文件添加下面的内容</p>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">footer</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># 本博客已稳定运行1天2小时3分钟</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runtime1</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="l">本博客已稳定运行</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runtime2</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="l">天</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runtime3</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="l">小时</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runtime4</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="l">分钟</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># 共发表x篇文章，总计y k字</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">count1</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="l">共发表</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">count2</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="l">篇文章 · 总计</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">count3</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="l">字</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># 本站总访问量X次</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">pv1</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="l">本站总访问量</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">pv2</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="l">次</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="13-改变站点统计信息的字体和位置">1.3 改变站点统计信息的字体和位置
+</h3><blockquote class="alert alert-note">
+    <p>现在的站点统计信息非常丑，放在页面的左下角，还会和音乐播放器叠在一起，所以要想办法把站点统计信息放到页面正中间的最下方，更改站点统计信息的位置和字体样式,所以有了这部分的优化内容。</p></blockquote>
+<ul>
+<li>
+<p>修改根目录<code>./layouts/partials/footer/custom.html</code>文件，在上面说过的内容后面添加内容即可</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;site-stats-footer&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;runtime&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>{{ T &#34;footer.runtime1&#34; | default &#34;本站已稳定运行&#34; }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;run-days&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;running-days&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>{{ T &#34;footer.runtime2&#34; | default &#34;天&#34; }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;run-hours&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;running-days&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>{{ T &#34;footer.runtime3&#34; | default &#34;小时&#34; }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;run-minutes&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;running-days&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>{{ T &#34;footer.runtime4&#34; | default &#34;分钟&#34; }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;article-count&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        {{ $articleCount := len (where .Site.RegularPages &#34;Type&#34; &#34;in&#34; .Site.Params.mainSections) }}
+</span></span><span class="line"><span class="cl">        {{ $totalWordCount := 0 }}
+</span></span><span class="line"><span class="cl">        {{ range (where .Site.RegularPages &#34;Type&#34; &#34;in&#34; .Site.Params.mainSections) }}
+</span></span><span class="line"><span class="cl">            {{ $totalWordCount = add $totalWordCount .WordCount }}
+</span></span><span class="line"><span class="cl">        {{ end }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>{{ T &#34;footer.count1&#34; | default &#34;共发表&#34; }} {{ $articleCount }} {{ T &#34;footer.count2&#34; | default &#34;篇文章・总计&#34; }} {{ div $totalWordCount 1000.0 | lang.FormatNumber 1 }}k {{ T &#34;footer.count3&#34; | default &#34;字&#34; }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;site-pv&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_container_site_pv&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            {{ T &#34;footer.pv1&#34; | default &#34;本站总访问量 &#34; }}<span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_value_site_pv&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>{{ T &#34;footer.pv2&#34; | default &#34; 次&#34; }}
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">function</span> <span class="nx">updateRunningTime</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 【请修改】请将此日期更改为您网站的实际建立日期！
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kd">let</span> <span class="nx">siteStartDate</span> <span class="o">=</span> <span class="s1">&#39;2023-06-18&#39;</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">let</span> <span class="nx">startDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">siteStartDate</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/-/g</span><span class="p">,</span> <span class="s2">&#34;/&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">let</span> <span class="nx">currentDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">let</span> <span class="nx">timeDifference</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span> <span class="o">-</span> <span class="nx">startDate</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">let</span> <span class="nx">days</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">timeDifference</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">24</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">let</span> <span class="nx">hours</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">timeDifference</span> <span class="o">%</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">24</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">let</span> <span class="nx">minutes</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">timeDifference</span> <span class="o">%</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;run-days&#39;</span><span class="p">))</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;run-days&#39;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">days</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;run-hours&#39;</span><span class="p">))</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;run-hours&#39;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">hours</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;run-minutes&#39;</span><span class="p">))</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;run-minutes&#39;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">minutes</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 首次加载时运行
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">updateRunningTime</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 设置定时器，每分钟更新一次运行时间
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">setInterval</span><span class="p">(</span><span class="nx">updateRunningTime</span><span class="p">,</span> <span class="mi">60000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">async</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">site-stats-footer</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 布局与边框 */</span>
+</span></span><span class="line"><span class="cl">        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span> <span class="c">/* 让所有文字居中 */</span>
+</span></span><span class="line"><span class="cl">        <span class="k">margin-top</span><span class="p">:</span> <span class="mi">2</span><span class="kt">rem</span><span class="p">;</span>   <span class="c">/* 与上方内容（如版权信息）的间距 */</span>
+</span></span><span class="line"><span class="cl">        <span class="k">padding-top</span><span class="p">:</span> <span class="mi">2</span><span class="kt">rem</span><span class="p">;</span>  <span class="c">/* 内部上方的间距 */</span>
+</span></span><span class="line"><span class="cl">        <span class="k">border-top</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span> <span class="c">/* 在顶部添加一条分割线 */</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c">/* 字体样式 */</span>
+</span></span><span class="line"><span class="cl">        <span class="k">font-size</span><span class="p">:</span> <span class="mf">1.0</span><span class="kt">rem</span><span class="p">;</span> <span class="c">/* 字体大小 */</span>
+</span></span><span class="line"><span class="cl">        <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="kc">text</span><span class="o">-</span><span class="kc">color</span><span class="o">-</span><span class="n">secondary</span><span class="p">);</span> <span class="c">/* 使用主题的次要文字颜色 */</span>
+</span></span><span class="line"><span class="cl">        <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.8</span><span class="p">;</span> <span class="c">/* 增加行高，让多行文字不拥挤 */</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h2 id="2-添加访客地图未">2 添加访客地图(未)
+</h2><blockquote class="alert alert-tip">
+    <p>访客地图是一个<strong>可视化的小工具</strong>，它会在你的网站侧边栏显示一个<strong>动态的3D地球</strong>。每当有来自世界不同地方的访客访问你的网站时，地球上对应的位置就会出现一个小红点，直观地展示出你的访客遍布全球的情况。</p></blockquote>
+<h3 id="21-操作步骤">2.1 操作步骤
+</h3><ol>
+<li>
+<p>访问 <a class="link" href="https://clustrmaps.com/"  target="_blank" rel="noopener"
+    >ClustrMaps 官网</a>，获取你的专属ID</p>
+</li>
+<li>
+<p>有两种显示形式可以选择：</p>
+<p><img src="/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/map.png"
+	width="1916"
+	height="480"
+	srcset="/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/map_hu_36d6c88ea2c39441.png 480w, /hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/map_hu_99e291e15d59b159.png 1024w"
+	loading="lazy"
+	
+		alt="显示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="399"
+		data-flex-basis="958px"
+	
+></p>
+</li>
+</ol>
+<ul>
+<li>
+<p>在根目录<code>./layouts/partials/sidebar/right.html</code> 添加后完整代码如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{- $scope := default &#34;homepage&#34; .Scope -}}
+</span></span><span class="line"><span class="cl">{{- $context := .Context -}}
+</span></span><span class="line"><span class="cl">{{- with (index .Context.Site.Params.widgets $scope) -}}
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">aside</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar right-sidebar sticky&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        {{ range $widget := . }}
+</span></span><span class="line"><span class="cl">            {{ if templates.Exists (printf &#34;partials/widget/%s.html&#34; .type) }}
+</span></span><span class="line"><span class="cl">                {{ partial (printf &#34;widget/%s&#34; .type) (dict &#34;Context&#34; $context &#34;Params&#34; .params) }}
+</span></span><span class="line"><span class="cl">            {{ else }}
+</span></span><span class="line"><span class="cl">                {{ warnf &#34;Widget %s not found&#34; .type }}
+</span></span><span class="line"><span class="cl">            {{ end }}
+</span></span><span class="line"><span class="cl">        {{ end }}
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;height: 30%;width: 30%&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;clstr_globe&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;//clustrmaps.com/globe.js?d=xxxxx&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">aside</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h2 id="3-首页欢迎横幅">3 首页欢迎横幅
+</h2><ol>
+<li>
+<p>在 <code>./layouts/index.html</code>的 <code>&lt;section class=&quot;article-list&quot;&gt;</code> 前添加以下代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- 首页欢迎字幅 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;welcome&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;font-size: 2rem; text-align: center; font-weight: bold&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;shake&#34;</span><span class="p">&gt;</span>👋<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;jump-text1&#34;</span> <span class="p">&gt;</span> Welcome<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;jump-text2&#34;</span><span class="p">&gt;</span> To <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;jump-text3&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;color:#124be9&#34;</span><span class="p">&gt;</span>Buc<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;jump-text4&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;color:#124be9&#34;</span><span class="p">&gt;</span>k<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;jump-text5&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;color:#124be9&#34;</span><span class="p">&gt;</span>e<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;jump-text6&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;color:#124be9&#34;</span><span class="p">&gt;</span>t<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;jump-text7&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;color:#124be9&#34;</span><span class="p">&gt;</span>Sran<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;jump-text8&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;color:#124be9&#34;</span><span class="p">&gt;</span>&#39;s<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;jump-text9&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;color:#124be9&#34;</span><span class="p">&gt;</span>Blog<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- 首页欢迎字幅 --&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>在 <code>./assets/scss/custom.scss</code> 中加入以下代码：</p>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="o">//</span> <span class="nt">----------------首页欢迎板块样式----------------</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">welcome</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="kc">text</span><span class="o">-</span><span class="kc">color</span><span class="o">-</span><span class="n">main</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">background</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">box-shadow</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">shadow</span><span class="o">-</span><span class="n">l2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="err">👋</span><span class="nt">emoji实现摆动效果</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">shake</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation</span><span class="p">:</span> <span class="n">shake</span> <span class="mi">1</span><span class="kt">s</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-duration</span><span class="p">:</span> <span class="mi">1</span><span class="kt">s</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-timing-function</span><span class="p">:</span> <span class="kc">ease</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-delay</span><span class="p">:</span> <span class="mi">0</span><span class="kt">s</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-iteration-count</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-direction</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-fill-mode</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-play-state</span><span class="p">:</span> <span class="kc">running</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-name</span><span class="p">:</span> <span class="n">shake</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-timeline</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-range-start</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-range-end</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-delay</span><span class="p">:</span> <span class="mi">2</span><span class="kt">s</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="err">@keyframes</span> <span class="err">shake</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">    <span class="err">0%</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">25</span><span class="o">%</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mi">45</span><span class="kt">deg</span><span class="p">)</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">1.2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">50</span><span class="o">%</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">1.2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">75</span><span class="o">%</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mi">45</span><span class="kt">deg</span><span class="p">)</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">1.2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">100</span><span class="o">%</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="err">}</span>
+</span></span><span class="line"><span class="cl"><span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="nt">实现字符跳动动画</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">jump-text1</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation</span><span class="p">:</span> <span class="n">jump</span> <span class="mf">0.5</span><span class="kt">s</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">jump-text2</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation</span><span class="p">:</span> <span class="n">jump</span> <span class="mf">0.5</span><span class="kt">s</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-delay</span><span class="p">:</span> <span class="mf">0.1</span><span class="kt">s</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">jump-text3</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation</span><span class="p">:</span> <span class="n">jump</span> <span class="mf">0.5</span><span class="kt">s</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-delay</span><span class="p">:</span> <span class="mf">0.2</span><span class="kt">s</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">jump-text4</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation</span><span class="p">:</span> <span class="n">jump</span> <span class="mf">0.5</span><span class="kt">s</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-delay</span><span class="p">:</span> <span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">jump-text5</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation</span><span class="p">:</span> <span class="n">jump</span> <span class="mf">0.5</span><span class="kt">s</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-delay</span><span class="p">:</span> <span class="mf">0.4</span><span class="kt">s</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">jump-text6</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation</span><span class="p">:</span> <span class="n">jump</span> <span class="mf">0.5</span><span class="kt">s</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-delay</span><span class="p">:</span> <span class="mf">0.5</span><span class="kt">s</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">jump-text7</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation</span><span class="p">:</span> <span class="n">jump</span> <span class="mf">0.5</span><span class="kt">s</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-delay</span><span class="p">:</span> <span class="mf">0.6</span><span class="kt">s</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">jump-text8</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation</span><span class="p">:</span> <span class="n">jump</span> <span class="mf">0.5</span><span class="kt">s</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-delay</span><span class="p">:</span> <span class="mf">0.7</span><span class="kt">s</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">jump-text9</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation</span><span class="p">:</span> <span class="n">jump</span> <span class="mf">0.5</span><span class="kt">s</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">animation-delay</span><span class="p">:</span> <span class="mf">0.9</span><span class="kt">s</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">keyframes</span> <span class="nt">jump</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">0</span><span class="o">%</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">transform</span><span class="p">:</span> <span class="nb">translateY</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">50</span><span class="o">%</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">transform</span><span class="p">:</span> <span class="nb">translateY</span><span class="p">(</span><span class="mi">-20</span><span class="kt">px</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">100</span><span class="o">%</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">transform</span><span class="p">:</span> <span class="nb">translateY</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="4-删除使用-hugo-构建-主题stack由jimmy设计等字样未验证">4 删除“使用 Hugo 构建 主题Stack由Jimmy设计”等字样(未验证)
+</h2><ul>
+<li>删除掉<code>./layout/partials/footer/custom.html</code> 里边的代码</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{- $ThemeVersion := &#34;3.29.0&#34; -}}
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">footer</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;site-footer&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;copyright&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="ni">&amp;copy;</span> 
+</span></span><span class="line"><span class="cl">        {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format &#34;2006&#34;))) }}
+</span></span><span class="line"><span class="cl">            {{ .Site.Params.footer.since }} - 
+</span></span><span class="line"><span class="cl">        {{ end }}
+</span></span><span class="line"><span class="cl">        {{ now.Format &#34;2006&#34; }} {{ default .Site.Title .Site.Copyright }}
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!------------- 以下的删除掉 -------------&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;powerby&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        {{ with .Site.Params.footer.customText }}
+</span></span><span class="line"><span class="cl">            {{ . | safeHTML }} <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        {{ end }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        {{- $Generator := `<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://gohugo.io/&#34;</span> <span class="na">target</span><span class="o">=</span><span class="s">&#34;_blank&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;noopener&#34;</span><span class="p">&gt;</span>Hugo<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>` -}}
+</span></span><span class="line"><span class="cl">        {{- $Theme := printf `<span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;</span> <span class="na">target</span><span class="o">=</span><span class="s">&#34;_blank&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;noopener&#34;</span> <span class="na">data-version</span><span class="o">=</span><span class="s">&#34;%s&#34;</span><span class="p">&gt;</span>Stack<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">b</span><span class="p">&gt;</span>` $ThemeVersion -}}
+</span></span><span class="line"><span class="cl">        {{- $DesignedBy := `<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://jimmycai.com&#34;</span> <span class="na">target</span><span class="o">=</span><span class="s">&#34;_blank&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;noopener&#34;</span><span class="p">&gt;</span>Jimmy<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>` -}}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        {{ T &#34;footer.builtWith&#34; (dict &#34;Generator&#34; $Generator) | safeHTML }} <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        {{ T &#34;footer.designedBy&#34; (dict &#34;Theme&#34; $Theme &#34;DesignedBy&#34; $DesignedBy) | safeHTML }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        {{ $articleCount := len .Site.RegularPages }}
+</span></span><span class="line"><span class="cl">        {{ $totalWordCount := 0 }}
+</span></span><span class="line"><span class="cl">        {{ range .Site.Pages }}
+</span></span><span class="line"><span class="cl">        {{ $totalWordCount = add $totalWordCount .WordCount }}
+</span></span><span class="line"><span class="cl">        {{ end }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>发布了 {{ $articleCount }} 篇文章 | 共 {{$totalWordCount}} 字<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!------------- 以上的删除掉 -------------&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>根据CC BY-NC-SA 4.0协议授权</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 2025-09-15 17:50
+        </span>
+    </section></footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/hugo-dev/p/hugo-%E6%A1%86%E6%9E%B6%E4%B8%8B%E7%9A%84-markdown-%E8%AF%AD%E6%B3%95/">
+        
+        
+            <div class="article-image">
+                <img src="/hugo-dev/p/hugo-%E6%A1%86%E6%9E%B6%E4%B8%8B%E7%9A%84-markdown-%E8%AF%AD%E6%B3%95/pawel-czerwinski-8uZPynIu-rQ-unsplash.c514d916917173a48a42e0114b469961_hu_12cb662251854034.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Hugo 框架下的 Markdown 语法"
+                        
+                        data-hash="md5-xRTZFpFxc6SKQuARS0aZYQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugo 框架下的 Markdown 语法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/hugo-dev/p/%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88%E8%87%AA%E7%94%A8/">
+        
+        
+            <div class="article-image">
+                <img src="/hugo-dev/p/%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88%E8%87%AA%E7%94%A8/we_are_all_clowns.f6e73c3e39e7b1e6ebe419c7e08e57e8_hu_eda1d91929a9befb.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 网站内容优化方案（自用）"
+                        
+                        data-hash="md5-9uc8Pjnnsebr5BnH4I5X6A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">网站内容优化方案（自用）</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div id="giscus-container"></div>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 BucketSran knock your head
+    </section>
+    
+    <section class="powerby">
+        
+            You can add my QQ If you want to know more about me:1394021634 <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/hugo-dev/ts/main.99ce1801c4bad426a42fc436add4721e149159dbb598636e9578fd59cf778c83.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<div id="aplayer"></div>
+
+<script>
+	const musicDir = "https://BucketSran.github.io/hugo-dev/";
+	const songs = [
+		'方大同 - 天气先生',
+		'许嵩 - 星座书上',
+		'曾沛慈 - 一个人想着一个人',
+        '张震岳 - 思念是一种病',
+        '古巨基 - 爱与诚',
+	];
+	let audios = [];
+	songs.forEach((item) => {
+		const songInfo = item.split(' - ');
+		audios.push({
+			name: songInfo[1],
+			artist: songInfo[0],
+			url: musicDir + 'music/' + item + '/song.mp3',
+			cover: musicDir + 'music/' + item + '/cover.jpg',
+			lrc: musicDir + 'music/' + item + '/lyric.lrc'
+		});
+	});
+	const ap = new APlayer({
+   		container: document.getElementById('aplayer'),
+		 fixed: true,
+		 listMaxHeight: '90px',  
+		 lrcType: 1,
+   		 audio: audios
+	});
+
+
+    
+
+    window.onbeforeunload = () => {
+        
+        const playInfo = {
+            index: ap.list.index,
+            currentTime: ap.audio.currentTime,
+            paused: ap.paused
+        };
+        localStorage.setItem("playInfo", JSON.stringify(playInfo));
+    };
+
+    
+
+    window.onload = () => {
+        
+        const playInfo = JSON.parse(localStorage.getItem("playInfo"));
+        if (!playInfo) {
+            return;
+        }
+        
+        ap.list.switch(playInfo.index);
+        
+        setTimeout(() => {
+            
+            ap.seek(playInfo.currentTime);
+            
+            if (!playInfo.paused) {
+                ap.play()
+            }
+        }, 500);
+    };
+</script>
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
+
+
+    
+    <script src=https://BucketSran.github.io/hugo-dev/js/topbar.min.js></script>
+
+
+
+<script>
+
+    var pjax = new Pjax({
+      selectors: [".main-container"]
+    })
+    
+
+    pjax._handleResponse = pjax.handleResponse;
+
+    pjax.handleResponse = function(responseText, request, href, options) {
+    if (request.responseText.match("<html")) {
+        
+        let newDom = new DOMParser().parseFromString(responseText, 'text/html');
+        
+        let bodyClass = newDom.body.className;
+        document.body.setAttribute("class", bodyClass)
+        
+        setTimeout(() => {
+             pjax._handleResponse(responseText, request, href, options);
+        }, 600);
+       
+    } else {
+        
+    }
+    }
+    
+    
+    topbar.config({
+        barColors: {
+            '0': 'rgba(255,  255, 255, 1)', 
+            '1.0': 'rgba(0, 149, 234,  1)' 
+        }
+    })
+
+    document.addEventListener('pjax:send',() => {
+       
+       topbar.show();
+    })
+
+    document.addEventListener('pjax:complete',() => {
+       
+       window.Stack.init();
+       
+       topbar.hide();
+    })
+
+</script>
+
+
+
+
+
+ 
+	
+
+
+
+
+<script>
+    
+    
+    (function() {
+        
+        if (screen.width < 768) {
+            return;
+        }
+
+        const live2d_path = 'https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.6/dist/';
+        const cssPath = 'https:\/\/BucketSran.github.io\/hugo-dev\/waifu\/waifu.css';
+        const waifuTipsJsonPath = 'https:\/\/BucketSran.github.io\/hugo-dev\/waifu\/waifu-tips.json';
+        const live2dMinJsPath = 'https:\/\/BucketSran.github.io\/hugo-dev\/waifu\/live2d.min.js';
+
+        function loadExternalResource(url, type) {
+            return new Promise((resolve, reject) => {
+                let tag;
+                if (type === 'css') {
+                    tag = document.createElement('link');
+                    tag.rel = 'stylesheet';
+                    tag.href = url;
+                } else if (type === 'js') {
+                    tag = document.createElement('script');
+                    tag.type = 'module';
+                    tag.src = url;
+                }
+                if (tag) {
+                    tag.onload = () => resolve(url);
+                    tag.onerror = () => reject(url);
+                    document.head.appendChild(tag);
+                }
+            });
+        }
+
+        function initWaifuMouseEvent() {
+            const waifu = document.getElementById("waifu");
+            if (!waifu) return;
+            let isDown = false, waifuLeft = 0, mouseLeft = 0, waifuTop = 0, mouseTop = 0;
+            waifu.onmousedown = function(e) { isDown = true; waifuLeft = waifu.offsetLeft; mouseLeft = e.clientX; waifuTop = waifu.offsetTop; mouseTop = e.clientY; }
+            window.onmousemove = function(e) {
+                if (!isDown) return;
+                let currentLeft = waifuLeft + (e.clientX - mouseLeft);
+                if (currentLeft < 0) currentLeft = 0;
+                else if (currentLeft > window.innerWidth - 300) currentLeft = window.innerWidth - 300;
+                waifu.style.left = currentLeft + "px";
+                let currentTop = waifuTop + (e.clientY - mouseTop);
+                if (currentTop < 0) currentTop = 0;
+                else if (currentTop > window.innerHeight - 290) currentTop = window.innerHeight - 290;
+                waifu.style.top = currentTop + "px";
+            }
+            window.onmouseup = function(e) { isDown = false; }
+        }
+
+        (async () => {
+            const OriginalImage = window.Image;
+            window.Image = function(...args) { const img = new OriginalImage(...args); img.crossOrigin = "anonymous"; return img; };
+            window.Image.prototype = OriginalImage.prototype;
+            await Promise.all([
+                loadExternalResource(cssPath, 'css'),
+                loadExternalResource(live2dMinJsPath, 'js'),
+                loadExternalResource(live2d_path + 'waifu-tips.js', 'js')
+            ]);
+            initWidget({
+                waifuPath: waifuTipsJsonPath,
+                cdnPath: 'https://cdn.jsdelivr.net/gh/BucketSran/static-resource@v1.0.0',
+                cubism2Path: live2d_path + 'live2d.min.js',
+                tools: ['hitokoto', 'asteroids', 'switch-model', 'switch-texture', 'photo', 'info', 'quit'],
+                logLevel: 'warn',
+                drag: false,
+            });
+            initWaifuMouseEvent();
+        })();
+    })(); 
+</script>
+
+<script src="https://BucketSran.github.io/hugo-dev/background/sakura.js"></script>
+<script defer src="https://cn.vercount.one/js"></script>
+
+
+<style>
+     
+    #backTopBtn { display: none; position: fixed; bottom: 30px; z-index: 99; cursor: pointer; width: 30px; height: 30px; background-image: url(https://BucketSran.github.io/hugo-dev/icons/backTop.svg); }
+     
+    .highlight { max-height: 400px; overflow: hidden; position: relative; }
+    .code-show { max-height: none !important; }
+    .code-more-box { width: 100%; padding-top: 78px; background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), white); position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; }
+    [data-scheme="dark"] .code-more-box { background-image: linear-gradient(180deg, rgba(28, 28, 30, 0), #1c1c1e); }
+    .code-more-btn { display: block; margin: auto; width: 44px; height: 22px; background: #f0f0f5; border-top-left-radius: 8px; border-top-right-radius: 8px; padding-top: 6px; cursor: pointer; }
+    [data-scheme="dark"] .code-more-btn { background: #3a3a3c; }
+    .code-more-img { cursor: pointer !important; display: block; margin: auto; width: 22px; height: 16px; }
+</style>
+
+
+<script>
+    
+
+    function initScrollTop() {
+        const rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar || document.getElementById("backTopBtn")) return;
+        const btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+        rightSideBar.appendChild(btn);
+        if (typeof window.onBackTopScroll !== 'function') {
+            window.onBackTopScroll = function() {
+                const backTopBtn = document.getElementById("backTopBtn");
+                if (backTopBtn) {
+                    backTopBtn.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
+                }
+            };
+            window.addEventListener('scroll', window.onBackTopScroll);
+        }
+    }
+
+    
+
+    function initCodeMoreBox() {
+        const codeBlocks = document.querySelectorAll(".highlight");
+        if (!codeBlocks.length) return;
+        codeBlocks.forEach(codeBlock => {
+            if (codeBlock.querySelector('.code-more-box') || codeBlock.scrollHeight <= codeBlock.clientHeight) return;
+            const codeMoreBox = document.createElement('div');
+            codeMoreBox.className = 'code-more-box';
+            const codeMoreBtn = document.createElement('span');
+            codeMoreBtn.className = 'code-more-btn';
+            codeMoreBtn.addEventListener('click', () => {
+                codeBlock.classList.add('code-show');
+                codeMoreBox.style.display = 'none';
+                window.dispatchEvent(new Event('resize'));
+            });
+            const img = document.createElement('img');
+            img.className = 'code-more-img';
+            try {
+                img.src = 'https:\/\/BucketSran.github.io\/hugo-dev\/icons\/codeMore.png';
+                img.alt = 'Expand code';
+                codeMoreBtn.appendChild(img);
+                codeMoreBox.appendChild(codeMoreBtn);
+                codeBlock.appendChild(codeMoreBox);
+            } catch (e) {
+                console.error("加载 codeMore.png 图标失败，请检查文件是否存在于 /assets/icons/ 目录下。", e);
+            }
+        });
+    }
+
+    
+
+    function initGiscus() {
+        const giscusContainer = document.querySelector("#giscus-container");
+        if (!giscusContainer) return;
+        const oldGiscus = giscusContainer.querySelector('.giscus');
+        if (oldGiscus) oldGiscus.remove();
+        const giscusScript = document.createElement('script');
+        giscusScript.src = 'https://giscus.app/client.js';giscusScript.setAttribute('data-repo', 'BucketSran\/hugo_messageBoard');
+            giscusScript.setAttribute('data-repo-id', 'R_kgDOPuB4bQ');
+            giscusScript.setAttribute('data-category', 'General');
+            giscusScript.setAttribute('data-category-id', 'DIC_kwDOPuB4bc4CvTuK');
+            giscusScript.setAttribute('data-mapping', 'pathname');
+            giscusScript.setAttribute('data-reactions-enabled', '1');
+            giscusScript.setAttribute('data-emit-metadata', '0');
+            giscusScript.setAttribute('data-input-position', 'top');
+            giscusScript.setAttribute('data-lang', 'zh-CN');const theme = document.documentElement.dataset.scheme === 'light' ? 'light' : 'dark';
+        giscusScript.setAttribute('data-theme', theme);
+        giscusScript.crossOrigin = 'anonymous';
+        giscusScript.async = true;
+        giscusContainer.appendChild(giscusScript);
+    }
+
+    
+
+    function runPjaxCompatibleScripts() {
+        initScrollTop();
+        initCodeMoreBox();
+        initGiscus(); 
+        
+        if (window.vercount) {
+            window.vercount.count();
+        }
+    }
+
+    
+    document.addEventListener('DOMContentLoaded', runPjaxCompatibleScripts);
+    document.addEventListener('pjax:complete', runPjaxCompatibleScripts);
+</script>
+
+
+
+
+
+<section class="site-stats-footer">
+    <div class="runtime">
+        <span>本博客已稳定运行</span>
+        <span id="run-days" class="running-days"></span>
+        <span>天</span>
+        <span id="run-hours" class="running-days"></span>
+        <span>小时</span>
+        <span id="run-minutes" class="running-days"></span>
+        <span>分钟</span>
+    </div>
+
+    <div class="article-count">
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        <span>共发表 4 篇文章 · 总计 9.2k 字</span>
+    </div>
+
+    
+
+</section>
+
+<script>
+    function updateRunningTime() {
+        
+        let siteStartDate = '2025-09-13'; 
+        
+        let startDate = new Date(siteStartDate.replace(/-/g, "/"));
+        let currentDate = new Date();
+        let timeDifference = currentDate.getTime() - startDate.getTime();
+        
+        let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        
+        if(document.getElementById('run-days')) document.getElementById('run-days').innerHTML = days;
+        if(document.getElementById('run-hours')) document.getElementById('run-hours').innerHTML = hours;
+        if(document.getElementById('run-minutes')) document.getElementById('run-minutes').innerHTML = minutes;
+    }
+    
+    updateRunningTime();
+    
+    setInterval(updateRunningTime, 60000);
+</script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<style>
+    .site-stats-footer {
+         
+        text-align: center;  
+        margin-top: 2rem;    
+        padding-top: 2rem;   
+        border-top: 1px solid var(--card-border-color);  
+
+         
+        font-size: 1.0rem;  
+        color: var(--card-text-color-secondary);  
+        line-height: 1.8;  
+    }
+</style>
+
+    </body>
+</html>
