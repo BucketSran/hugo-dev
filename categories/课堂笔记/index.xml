@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>课堂笔记 on BucketSran</title>
+        <link>https://BucketSran.github.io/hugo-dev/categories/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/</link>
+        <description>Recent content in 课堂笔记 on BucketSran</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>BucketSran knock your head</copyright><atom:link href="https://BucketSran.github.io/hugo-dev/categories/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>带隙基准</title>
+        <link>https://BucketSran.github.io/hugo-dev/p/%E5%B8%A6%E9%9A%99%E5%9F%BA%E5%87%86/</link>
+        <pubDate>Tue, 16 Sep 2025 10:38:36 +0800</pubDate>
+        
+        <guid>https://BucketSran.github.io/hugo-dev/p/%E5%B8%A6%E9%9A%99%E5%9F%BA%E5%87%86/</guid>
+        <description>&lt;img src="https://BucketSran.github.io/hugo-dev/p/%E5%B8%A6%E9%9A%99%E5%9F%BA%E5%87%86/bandgap.jpg" alt="Featured image of post 带隙基准" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

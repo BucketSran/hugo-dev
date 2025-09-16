@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>BucketSran knock your head</copyright>
-        <lastBuildDate>Mon, 15 Sep 2025 19:45:46 +0800</lastBuildDate><atom:link href="https://BucketSran.github.io/hugo-dev/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 16 Sep 2025 11:00:29 +0800</lastBuildDate><atom:link href="https://BucketSran.github.io/hugo-dev/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>带隙基准</title>
+        <link>https://BucketSran.github.io/hugo-dev/p/%E5%B8%A6%E9%9A%99%E5%9F%BA%E5%87%86/</link>
+        <pubDate>Tue, 16 Sep 2025 10:38:36 +0800</pubDate>
+        
+        <guid>https://BucketSran.github.io/hugo-dev/p/%E5%B8%A6%E9%9A%99%E5%9F%BA%E5%87%86/</guid>
+        <description>&lt;img src="https://BucketSran.github.io/hugo-dev/p/%E5%B8%A6%E9%9A%99%E5%9F%BA%E5%87%86/bandgap.jpg" alt="Featured image of post 带隙基准" /&gt;</description>
+        </item>
+        <item>
         <title>一些网站优化内容的补充</title>
         <link>https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/</link>
         <pubDate>Mon, 15 Sep 2025 14:32:25 +0800</pubDate>
@@ -428,10 +436,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;改动说明&lt;/strong&gt;：我将您的地图脚本用主题标准的 &lt;code&gt;&amp;lt;section class=&amp;quot;widget&amp;quot;&amp;gt;&lt;/code&gt; 结构包裹起来，并添加了 &lt;code&gt;&amp;lt;h3&amp;gt;&lt;/code&gt; 标题和 &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; 说明文字，让它看起来和其他小部件（如搜索、归档）风格完全一致。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h4 id=&#34;第二步在-hugoyaml-中启用这个小部件&#34;&gt;第二步：在 &lt;code&gt;hugo.yaml&lt;/code&gt; 中启用这个小部件
 &lt;/h4&gt;&lt;p&gt;现在，我们需要告诉主题在侧边栏显示我们刚刚创建的这个小部件。&lt;/p&gt;
@@ -553,7 +558,54 @@
 &lt;p&gt;&lt;strong&gt;&lt;code&gt;border&lt;/code&gt; 和 &lt;code&gt;border-radius&lt;/code&gt;&lt;/strong&gt;: 为地图添加了和主题卡片风格一致的边框和圆角，让它完美融入您的网站设计。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;3-首页欢迎横幅&#34;&gt;3 首页欢迎横幅
+&lt;h4 id=&#34;第四步使得widget&#34;&gt;第四步：使得Widget
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;现在两个字体不统一，显得非常难看&lt;/p&gt;&lt;/blockquote&gt;
+&lt;img title=&#34;&#34; src=&#34;compare.png&#34; alt=&#34;&#34; width=&#34;409&#34;&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;接下来我们进行处理&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第一步：“复制”归档标题的样式&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在您的网站主页上，将鼠标移动到**“归档”**这个标题上。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击鼠标&lt;strong&gt;右键&lt;/strong&gt;，在弹出的菜单中选择“&lt;strong&gt;检查 (Inspect)&lt;/strong&gt;”。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;经查看可以发现，归档元素属性如下&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/guidang.png&#34;
+	width=&#34;499&#34;
+	height=&#34;311&#34;
+	srcset=&#34;https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/guidang_hu_a8d54245858b93de.png 480w, https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/guidang_hu_a429d6479368ff56.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;F12后选择结果&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;160&#34;
+		data-flex-basis=&#34;385px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;修改&lt;code&gt;layouts/partials/widget/visitor-map.html&lt;/code&gt; 文件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h3&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;widget-title&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;访客地图&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+ &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h2&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;widget-title section-title&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;访客地图&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;3-首页欢迎横幅&#34;&gt;3 首页欢迎横幅
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;在 &lt;code&gt;./layouts/index.html&lt;/code&gt;的 &lt;code&gt;&amp;lt;section class=&amp;quot;article-list&amp;quot;&amp;gt;&lt;/code&gt; 前添加以下代码：&lt;/p&gt;

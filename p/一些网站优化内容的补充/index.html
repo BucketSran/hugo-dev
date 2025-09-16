@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/'>
 
-<link rel="stylesheet" href="/hugo-dev/scss/style.min.d4d3642fb53643397bc6c59e4dffa302020942017e08347265e7e6a4a89f24b7.css"><meta property='og:title' content="一些网站优化内容的补充">
+<link rel="stylesheet" href="/hugo-dev/scss/style.min.6c4857b9e54da18cc4808cf585d34abf8d58176c35ae6bd4228173ab3b9d51f2.css"><meta property='og:title' content="一些网站优化内容的补充">
 <meta property='og:description' content="另开一个博客做补充吧">
 <meta property='og:url' content='https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/'>
 <meta property='og:site_name' content='BucketSran'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-09-15T14:32:25&#43;08:00'/><meta property='article:modified_time' content='2025-09-15T19:45:46&#43;08:00'/><meta property='og:image' content='https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/haizei.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-09-15T14:32:25&#43;08:00'/><meta property='article:modified_time' content='2025-09-16T11:00:29&#43;08:00'/><meta property='og:image' content='https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/haizei.jpg' />
 <meta name="twitter:title" content="一些网站优化内容的补充">
 <meta name="twitter:description" content="另开一个博客做补充吧"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://BucketSran.github.io/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/haizei.jpg' />
@@ -455,6 +455,7 @@
             <li><a href="#第一步创建独立的访客地图小部件文件">第一步：创建独立的“访客地图”小部件文件</a></li>
             <li><a href="#第二步在-hugoyaml-中启用这个小部件">第二步：在 <code>hugo.yaml</code> 中启用这个小部件</a></li>
             <li><a href="#第三步添加-css-样式来调整大小和美化">第三步：添加 CSS 样式来调整大小和美化</a></li>
+            <li><a href="#第四步使得widget">第四步：使得Widget</a></li>
           </ul>
         </li>
       </ul>
@@ -547,7 +548,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 7 分钟
+                    阅读时长: 8 分钟
                 </time>
             </div>
         
@@ -977,10 +978,7 @@
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ul>
-<li><strong>改动说明</strong>：我将您的地图脚本用主题标准的 <code>&lt;section class=&quot;widget&quot;&gt;</code> 结构包裹起来，并添加了 <code>&lt;h3&gt;</code> 标题和 <code>&lt;p&gt;</code> 说明文字，让它看起来和其他小部件（如搜索、归档）风格完全一致。</li>
-</ul>
-</li>
+</div></li>
 </ol>
 <h4 id="第二步在-hugoyaml-中启用这个小部件">第二步：在 <code>hugo.yaml</code> 中启用这个小部件
 </h4><p>现在，我们需要告诉主题在侧边栏显示我们刚刚创建的这个小部件。</p>
@@ -1102,7 +1100,54 @@
 <p><strong><code>border</code> 和 <code>border-radius</code></strong>: 为地图添加了和主题卡片风格一致的边框和圆角，让它完美融入您的网站设计。</p>
 </li>
 </ul>
-<h2 id="3-首页欢迎横幅">3 首页欢迎横幅
+<h4 id="第四步使得widget">第四步：使得Widget
+</h4><blockquote>
+<p>现在两个字体不统一，显得非常难看</p></blockquote>
+<img title="" src="compare.png" alt="" width="409">
+<hr>
+<p><strong>接下来我们进行处理</strong></p>
+<blockquote>
+<p>第一步：“复制”归档标题的样式</p></blockquote>
+<ol>
+<li>
+<p>在您的网站主页上，将鼠标移动到**“归档”**这个标题上。</p>
+</li>
+<li>
+<p>点击鼠标<strong>右键</strong>，在弹出的菜单中选择“<strong>检查 (Inspect)</strong>”。</p>
+</li>
+<li>
+<p>经查看可以发现，归档元素属性如下</p>
+<p><img src="/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/guidang.png"
+	width="499"
+	height="311"
+	srcset="/hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/guidang_hu_a8d54245858b93de.png 480w, /hugo-dev/p/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E5%86%85%E5%AE%B9%E7%9A%84%E8%A1%A5%E5%85%85/guidang_hu_a429d6479368ff56.png 1024w"
+	loading="lazy"
+	
+		alt="F12后选择结果"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="160"
+		data-flex-basis="385px"
+	
+></p>
+</li>
+</ol>
+<hr>
+<ol start="4">
+<li>修改<code>layouts/partials/widget/visitor-map.html</code> 文件</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">- <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;widget-title&#34;</span><span class="p">&gt;</span>访客地图<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">+ <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;widget-title section-title&#34;</span><span class="p">&gt;</span>访客地图<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="3-首页欢迎横幅">3 首页欢迎横幅
 </h2><ol>
 <li>
 <p>在 <code>./layouts/index.html</code>的 <code>&lt;section class=&quot;article-list&quot;&gt;</code> 前添加以下代码：</p>
@@ -1468,7 +1513,7 @@
 
 
         <span>
-            最后更新于 2025-09-15 19:45
+            最后更新于 2025-09-16 11:00
         </span>
     </section></footer>
 
@@ -2028,8 +2073,10 @@
         
             
         
+            
+        
 
-        <span>共发表 4 篇文章 · 总计 10.3k 字</span>
+        <span>共发表 5 篇文章 · 总计 10.5k 字</span>
     </div>
 
     
